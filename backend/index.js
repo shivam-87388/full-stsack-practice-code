@@ -1,5 +1,5 @@
 
-const express = require("express");
+ const express = require("express");
 const connect_db = require("./config/connection");
 require('dotenv').config();
 const cors = require("cors");
@@ -21,4 +21,5 @@ connect_db();
 
 app.listen(port, () => {
   console.log(`server started on  ${port}`)
-})
+}) 
+
