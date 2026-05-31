@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-  <div className="  w-full px-10 py-20 bg-white inline-flex flex-col justify-start items-center gap-2.5">
+  <div className="  w-screen px-10 py-20 bg-white inline-flex flex-col justify-start items-center gap-2.5">
   <div className="self-stretch flex flex-col justify-start items-center gap-7">
     <h1 className="self-stretch text-center justify-start text-black text-5xl font-bold font-['Inria_Serif']"> To do List</h1>
     <div className="self-stretch inline-flex justify-center items-center gap-8 flex-wrap content-center">
