@@ -7,12 +7,9 @@ const page = () => {
     <h1 className="self-stretch text-center justify-start text-black text-5xl font-bold font-['Inria_Serif']"> To do List</h1>
     <div className="self-stretch inline-flex justify-center items-center gap-8 flex-wrap content-center">
       <div className="inline-flex flex-col justify-start items-center gap-2.5">
-        <input type="text" className="w-208 h-20 rounded-[10px] border-[1.50px] border-black" />
+        <input type="text" placeholder="Enter task"  className="w-208 h-20 rounded-[10px] placeholder:text-2xl placeholder:p-6 border-[1.50px] border-black" />
       </div>
-       {/* <div className="w-64 h-20 px-4 py-2.5 bg-red-800 rounded-xl flex justify-center items-center gap-2.5 cursor-pointer">
-        <button className=" flex-1 w-48 text-center justify-start text-white text-5xl font-bold font-['Inria_Serif'] ">Add Task</button>
-      </div>  */}
-      <button className="px-4 py-2.5 w-64 h-20 bg-red-800 rounded-xl text-white text-5xl cursor-pointer hover:ring-2 font-bold font-['Inria_Serif']">Add Task</button>
+      <button className="px-4 py-2.5 w-64 h-20 border-2 border-amber-50 bg-red-800 rounded-xl text-white text-5xl cursor-pointer hover:ring-2 ring-black font-bold font-['Inria_Serif']">Add Task</button>
     </div>
   </div>
 </div>
