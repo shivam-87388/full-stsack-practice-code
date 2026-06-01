@@ -1,5 +1,6 @@
 import React from 'react'
 const num = 4;
+const fact = 1;
 const page = () => {
   return (
   <div className="w-full max-w-[450px] h-256 px-10 py-20 bg-white inline-flex flex-col justify-start items-center gap-2.5">
