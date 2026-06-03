@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     
- <div className=" w-full  px-40 py-12 bg-white flex  justify-center items-start gap-2.5">
+ <div className=" w-full  px-40 py-12 bg-white   justify-center items-start gap-2.5">
   <div className="flex-1 h-64 flex flex-col justify-start items-center gap-12">
     <div className="self-stretch text-center justify-start text-black text-5xl font-bold font-['Inria_Serif']">To do List</div>
     <div className="self-stretch px-9 flex md:flex-row flex-col justify-center items-center gap-10">
