@@ -2,21 +2,14 @@ import React from 'react'
 
 const todolist = () => {
   return (
-    <div className="flex justify-center items-start w-full px-40 py-12 bg-white  gap-2.5">
-      <div className="flex h-64 w-full lg:flex-col flex-row justify-start items-center gap-12">
-        <h1 className="flex justify-start items-center flex-col text-black text-5xl font-bold font-['Inria_Serif'] gap-4">
-          To do List
-        <div className="flex justify-center items-start gap-10">
-          <div className="flex-1 inline-flex flex-col justify-start items-center">
-            <input className="self-stretch h-16 rounded-lg border-[1.50px] border-black" />
-          </div>
-          <button className="flex items-center justify-center  bg-red-800 rounded-lg text-center text-white text-5xl font-bold font-['Inria_Serif']">
-            Add task
-          </button>
-        </div>
-        </h1>
-      </div>
+   <div className=" items-center justify-center p-6 -full ">
+    <h1 className="text-center text-black text-5xl font-bold font-['Inria_Serif']">To Do list</h1>
+    <div className="flex flex-row sm:flex-col justify-center items-center gap-4">
+      <input type="text" placeholder="enter task" className="w-1/2 py-2 px-2.5 text-2xl rounded-lg border-[1.50px] border-black"></input>
+      <button className="px-2.5 py-1 bg-red-800 rounded-lg text-white text-5xl font-bold font-['Inria_Serif']">Add task</button>
     </div>
+   </div>
+    
   );
 }
 
