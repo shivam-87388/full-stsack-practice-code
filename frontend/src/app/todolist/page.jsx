@@ -1,7 +1,12 @@
 'use client'
 import React from 'react'
+import toast, { Toaster } from 'react-hot-toast';
+
+const notification =  toast("sucessfull");
 const  handelclick = ()=>{
-  alert("angry")
+  alert("done")
+ 
+
 };
 
 const todolist = () => {
