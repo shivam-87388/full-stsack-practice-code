@@ -3,9 +3,6 @@ import React from 'react'
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 
-const handelchange = ()=>{
-  console.log(task);
-};
 
 const  handelclick = ()=>{
   
@@ -16,6 +13,9 @@ const  handelclick = ()=>{
 
 const todolist = () => {
   const [task, setTask] = useState("");
+  const handelchange = ()=>{
+    console.log(task);
+  };
   return (
    <div className=" items-center justify-center p-6 -full ">
     <h1 className="text-center text-black text-5xl font-bold font-['Inria_Serif'] p-2">To Do list</h1>
