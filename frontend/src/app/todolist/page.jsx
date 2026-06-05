@@ -14,7 +14,7 @@ const  handelclick = ()=>{
 };
 
 const todolist = () => {
-  const [set, settask] = useState("");
+  const [task, setTask] = useState("");
   return (
    <div className=" items-center justify-center p-6 -full ">
     <h1 className="text-center text-black text-5xl font-bold font-['Inria_Serif'] p-2">To Do list</h1>
