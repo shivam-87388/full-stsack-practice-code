@@ -4,7 +4,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const notification =  toast("sucessfull");
 const  handelclick = ()=>{
-  alert("done")
+ 
  
 
 };
