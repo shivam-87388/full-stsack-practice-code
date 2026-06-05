@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const notification =  toast("sucessfull");
 const  handelclick = ()=>{
-  const [set,setname] = useState();
+  const [set,setname] = useState("value");
  
  
 
