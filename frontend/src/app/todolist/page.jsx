@@ -14,7 +14,7 @@ const todolist = () => {
   };
   const  handelclick = ()=>{
     setTasks([tasks, task])
-   console.log(tasks);
+   console.log(tasks,task);
   };
   return (
     
