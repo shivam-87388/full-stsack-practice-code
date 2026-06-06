@@ -6,7 +6,8 @@ import toast, { Toaster } from 'react-hot-toast';
 
 
 const todolist = () => {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState("");
+  const [tasks, setTasks] = useState([]);
   const handelchange = (e)=>{
     setTask(e.target.value);
     console.log(e.target.value); 
