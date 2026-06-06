@@ -13,7 +13,8 @@ const todolist = () => {
     console.log(e.target.value); 
   };
   const  handelclick = ()=>{
-   console.log(task)
+    setTasks([tasks, task])
+   console.log(tasks,task);
   };
   return (
    <div className=" items-center justify-center p-6 -full ">
