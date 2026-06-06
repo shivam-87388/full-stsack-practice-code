@@ -4,17 +4,15 @@ import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 
 
-const  handelclick = ()=>{
-  
-  
-  
-  
-};
 
 const todolist = () => {
   const [task, setTask] = useState("");
-  const handelchange = ()=>{
-    console.log(task);
+  const handelchange = (e)=>{
+    setTask(e.target.value);
+    console.log(e.target.value); 
+  };
+  const  handelclick = ()=>{
+   console.log(task)
   };
   return (
    <div className=" items-center justify-center p-6 -full ">
