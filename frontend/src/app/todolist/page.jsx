@@ -21,12 +21,12 @@ const todolist = () => {
    <div className=" items-center justify-center p-6 -full ">
     <h1 className="text-center text-black text-5xl font-bold font-['Inria_Serif'] p-2">To Do list</h1>
     <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-      <input value={task} onChange={handelchange} type="text" placeholder="enter task" className="md:w-lg w-64 py-2.5 px-2.5 text-2xl rounded-lg border-[1.50px] border-black"></input>
-      <button onClick={handelclick} className="flex items-center justify-center px-2.5 py-1 text-nowrap cursor-pointer hover:ring-2 ring-black bg-red-800 rounded-lg text-white text-5xl border-2 boder-white  font-bold font-['Inria_Serif']">Add task</button>
+      <input value={task} onChange={handelchange} type="text" placeholder="enter task" className="md:w-lg w-64 h-14 px-4.5 text-2xl rounded-lg border-2 border-black"></input>
+      <button onClick={handelclick} className="flex items-center justify-center px-6 h-14 text-nowrap cursor-pointer hover:ring-2 ring-black bg-red-800 rounded-lg text-white text-xl md:text-2xl border-2 boder-white  font-bold font-['Inria_Serif']">Add task</button>
     </div>
-     <div className="flex items-center justify-center flex-col gap-2 p-2">
+     <div className="flex items-center justify-center flex-col gap-4 mt-5 w-full ">
        {tasks.map((item, index) => {
-        return <p key={index} className="text-2xl border-2 border-black w-2 rounded-2xl p-2.5">{item}</p>
+        return <p key={index} className="text-2xl border-2 text-white border-white w-3/5 rounded-2xl p-2.5 ">{item}</p>
 
        })}
       </div>
