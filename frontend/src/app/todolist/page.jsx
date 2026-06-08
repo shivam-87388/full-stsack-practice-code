@@ -24,7 +24,7 @@ const todolist = () => {
     <h1 className="text-center text-black text-5xl font-bold font-['Inria_Serif'] p-2">To Do list</h1>
     <div className="flex flex-col md:flex-row justify-center items-center gap-4">
       <input value={task} onChange={handelchange} type="text" placeholder="enter task" className="md:w-lg w-64 h-14 px-4.5 text-2xl rounded-lg border-2 border-black"></input>
-      <button onClick={handelclick} className="flex items-center justify-center px-6 h-14 text-nowrap cursor-pointer hover:ring-2 ring-black bg-red-800 rounded-lg lg text-white text-xl md:text-2xl border-2 boder-white  font-bold font-['Inria_Serif']">Add task</button>
+      <button onClick={handelclick} className="flex items-center justify-center px-6 h-14 text-nowrap cursor-pointer hover:ring-2 ring-black bg-red-800 rounded-lg text-white text-xl md:text-2xl border-2 boder-white  font-bold font-['Inria_Serif']">Add task</button>
     </div>
      <div className="flex items-center justify-center flex-col gap-4 mt-5 lg:w-1/2 w-full bg-amber-200 rounded-2xl px-4 py-3">
        {tasks.map((item, index) => {
