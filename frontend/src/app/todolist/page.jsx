@@ -17,7 +17,7 @@ const todolist = () => {
    console.log(...tasks,task);
   };
 
-  const
+
   const handeldelete = (index)=>{
    const newarr =  [...tasks]
    newarr.splice(index,1);
