@@ -28,9 +28,10 @@ const todolist = () => {
       <button onClick={handelclick} className="flex items-center justify-center px-6 h-14 text-nowrap cursor-pointer hover:ring-2 ring-black bg-red-800 rounded-lg text-white text-xl md:text-2xl border-2 boder-white  font-bold font-['Inria_Serif']">Add task</button>
     </div>
      <div className="flex items-center justify-center flex-col gap-4 mt-5 lg:w-1/2 w-full bg-amber-200 rounded-2xl px-4 py-3">
+     
        {tasks.map((item, index) => {
-        return <p key={index} className="w-full text-2xl border-2 text-black border-black  rounded-2xl p-2.5 ">{item}  <IconTrash color='red'/>  </p>
-
+        return <p key={index} className="w-full text-2xl border-2 text-black border-black  rounded-2xl p-2.5 ">{item}</p>
+        
        })}
       </div>
      
