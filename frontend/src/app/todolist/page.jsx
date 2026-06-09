@@ -5,9 +5,6 @@ import {IconTrash } from '@tabler/icons-react';
 
 
 
-
-
-
 const todolist = () => {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
@@ -20,7 +17,10 @@ const todolist = () => {
    console.log(...tasks,task);
   };
 
-  const handeldelete = ()=>{
+  const handeldelete = (index)=>{
+   const newarr =  [...tasks]
+   newarr.splice(index,1);
+   setTask(newarr);
 
   };
   return (
