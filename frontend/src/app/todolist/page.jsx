@@ -21,7 +21,7 @@ const todolist = () => {
   const handeldelete = (index)=>{
    const newarr =  [...tasks]
    newarr.splice(index,1);
-   setTask(newarr);
+   setTasks(newarr);
 
   };
   return (
@@ -37,7 +37,7 @@ const todolist = () => {
      
        {tasks.map((item, index) => {
         return <p key={index} className="flex justify-between w-full text-2xl border-2 text-black border-black  rounded-2xl p-2.5 ">{item}
-        <button  onClick={handeldelete}className="bg-black rounded-md p-1.5 hover:bg-gray-500 cursor-pointer"><IconTrash color='white'/></button>
+        <button onClick={() => handeldelete(index)} className="bg-black rounded-md p-1.5 hover:bg-gray-500 cursor-pointer"><IconTrash color='white' size={25}/></button>
         </p>
         
        })}
