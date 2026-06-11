@@ -12,15 +12,15 @@ const todolist = () => {
      console.log(e.target.value); 
   };
   const  handelclick = ()=>{
-    setTasks([...tasks, task])
-   console.log(...tasks,task);
+    setTasks([...task])
+   console.log(...task);
   };
 
 
   const handeldelete = (index)=>{
    const newarr =  [...tasks]
    newarr.splice(index,1);
-   setTasks(newarr);
+   setTask(newarr);
 
   };
   return (
