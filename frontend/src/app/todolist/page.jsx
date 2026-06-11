@@ -12,9 +12,7 @@ const todolist = () => {
      console.log(e.target.value); 
   };
   const  handelclick = ()=>{
-    setTasks([...task])
-   console.log(...task);
-  };
+   
 
 
   const handeldelete = (index)=>{
