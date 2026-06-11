@@ -34,7 +34,7 @@ const todolist = () => {
     
      <div className="flex items-center justify-center flex-col gap-4 mt-5 lg:w-1/2 w-full bg-amber-200 rounded-2xl px-4 py-3">
      
-       {tasks.map((item, index) => {
+       {task.map((item, index) => {
         return <p key={index} className="flex justify-between w-full text-2xl border-2 text-black border-black  rounded-2xl p-2.5 ">{item}
         <button onClick={() => handeldelete(index)} className="bg-black rounded-md p-1.5 hover:bg-gray-500 cursor-pointer"><IconTrash color='white' size={25}/></button>
         </p>
