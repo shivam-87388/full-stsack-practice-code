@@ -4,6 +4,11 @@ import { useState } from "react";
 
 const counter = () => {
     const [count, setCount] = useState(0);
+const handelclick = ()=>{
+    
+
+
+};
   return (
     <div className="h-screen flex flex-col justify-center items-center w-full">
         <h1 className="text-2xl ">{count}</h1>
