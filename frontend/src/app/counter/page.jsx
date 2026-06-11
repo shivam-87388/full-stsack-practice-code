@@ -13,7 +13,7 @@ const handelClick = ()=>{
   return (
     <div className="h-screen flex flex-col justify-center items-center w-full">
         <h1 className="text-2xl ">{count}</h1>
-        <button onClick={handelClick} className="flex justify-center items-center bg-emerald-700 text-2xl text-white px-3 py-2.5 rounded-lg">Count</button>
+        <button onClick={handelClick} className="flex justify-center items-center bg-emerald-700 text-2xl text-white px-3 py-2.5 rounded-lg border-2 border-white hover:cursor-pointer hover:ring-2 ring-black">Count</button>
 
     </div>
   )
