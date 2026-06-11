@@ -4,8 +4,9 @@ import { useState } from "react";
 
 const counter = () => {
     const [count, setCount] = useState(0);
-const handelclick = ()=>{
-    
+const handelClick = ()=>{
+   setCount()
+
 
 
 };
