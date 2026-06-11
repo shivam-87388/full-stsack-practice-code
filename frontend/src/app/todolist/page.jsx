@@ -6,8 +6,7 @@ import {IconTrash } from '@tabler/icons-react';
 
 
 const todolist = () => {
-  const [task, setTask] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [task, setTask] = useState([]);
   const handelchange = (e)=>{
     setTask(e.target.value);
      console.log(e.target.value); 
