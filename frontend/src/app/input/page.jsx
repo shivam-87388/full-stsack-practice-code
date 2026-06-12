@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react'
 
 const page = () => {
-  const [name, setName] = useState([]);
+  const [task, setTaks] = 
 
   const handelChange = (e)=>{
     setName([...name,e.target.value]);
