@@ -33,10 +33,10 @@ const page = () => {
       >
         submit
       </button>
-      <div className="flex flex-col justify-center items-center bg-green-800">
+      <div className="flex flex-col justify-center items-center bg-green-800 p-2 rounded-md">
         {tasks.map((item, index) => {
           return (
-            <p key={index} className="flex justify-center items-center text-2xl text-white w-80 border-2 border-white">
+            <p key={index} className="flex justify-center items-center text-2xl text-white w-80 border-2 border-white rounded-md px-2 py-1.5">
               {item}
             </p>
           );
