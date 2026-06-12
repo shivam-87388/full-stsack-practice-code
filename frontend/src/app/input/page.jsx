@@ -11,6 +11,7 @@ const page = () => {
     setTaks(e.target.value);
   };
  const handelAdd = ()=>{
+  setTakss([...tasks,task]);
 
  };
 
