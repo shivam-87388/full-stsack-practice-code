@@ -11,6 +11,7 @@ const page = () => {
     console.log(e.target.value);
   };
   const handelAdd = () => {
+    if (task.trim() === "") return; // blank value add hone se rokta hai 
     setTakss([...tasks, task]);
     console.log([...tasks, task]);
   };
