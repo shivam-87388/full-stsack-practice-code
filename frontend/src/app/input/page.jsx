@@ -21,7 +21,7 @@ const page = () => {
         enter something
       </label>
       <input
-        key={index}
+        value={task}
         onChange={handelChange}
         type="text"
         id="client"
@@ -33,6 +33,7 @@ const page = () => {
       >
         submit
       </button>
+      
       <div className="flex flex-col justify-center items-center bg-green-800 p-2 rounded-md">
         {tasks.map((item, index) => {
           return (
@@ -40,8 +41,10 @@ const page = () => {
               {item}
             </p>
           );
-        })}
+        })};
       </div>
+    
+      
     </div>
   );
 };
