@@ -20,7 +20,7 @@ const page = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full h-screen space-y-2">
       <label  id="fname" className="text-2xl ">enter something</label>
-        <input key={setName}  onChange={handelChange} type="text" id="fname" className="w-80 border-2 hover:cursor-pointer p-1.5 rounded-md text-2xl "></input>
+        <input key={setTaks}  onChange={handelChange} type="text" id="fname" className="w-80 border-2 hover:cursor-pointer p-1.5 rounded-md text-2xl "></input>
         <button onClick={handelAdd} className="flex justify-center items-center text-2xl px-2.5 py-2 bg-amber-400 rounded-md">submit</button>
 
 <div>
