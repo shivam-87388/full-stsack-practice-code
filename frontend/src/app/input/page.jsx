@@ -9,9 +9,13 @@ const page = () => {
 
   const handelChange = (e)=>{
     setTaks(e.target.value);
+    console.log(e.target.value);
+    
   };
  const handelAdd = ()=>{
   setTakss([...tasks,task]);
+  console.log([...tasks,task]);
+
  };
 
 
@@ -23,7 +27,7 @@ const page = () => {
         <button onClick={handelAdd} className="flex justify-center items-center text-2xl px-2.5 py-2 bg-amber-400 rounded-md">submit</button>
 
 <div>
-  {name.map((item,index)=>{
+  {tasks.map((item,index)=>{
     return
     <p key={index}>{item}</p>
 
