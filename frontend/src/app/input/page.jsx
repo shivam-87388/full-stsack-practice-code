@@ -3,12 +3,12 @@ import React from 'react'
 import { useState } from 'react'
 
 const page = () => {
-  const [task, setTaks] = 
+  const [task, setTaks] = useState("");
+  const [tasks, setTakss] = useState([]);
+
 
   const handelChange = (e)=>{
-    setName([...name,e.target.value]);
-    console.log([...name,e.target.value]);
-  };
+    setTakss
 
   const handelAdd = ()=>{
  
