@@ -17,14 +17,14 @@ const page = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full h-screen space-y-2">
-      <label id="fname" className="text-2xl ">
+      <label id="client" className="text-2xl ">
         enter something
       </label>
       <input
-        key={setTaks}
+        key={index}
         onChange={handelChange}
         type="text"
-        id="fname"
+        id="client"
         className="w-80 border-2 hover:cursor-pointer p-1.5 rounded-md text-2xl "
       ></input>
       <button
