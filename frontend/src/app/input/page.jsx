@@ -12,7 +12,6 @@ const page = () => {
   };
  const handelAdd = ()=>{
   setTakss([...tasks,task]);
-
  };
 
 
