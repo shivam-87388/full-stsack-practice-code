@@ -8,7 +8,7 @@ const page = () => {
 
 
   const handelChange = (e)=>{
-    setTakss
+    setTaks(e.target.value);
 
   const handelAdd = ()=>{
  
