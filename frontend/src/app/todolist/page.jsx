@@ -38,6 +38,13 @@ const todolist = () => {
           Add task
         </button>
       </div>
+      
+      <div>
+         {tasks.map((element, index) => {
+        return <p key={index}>{element}</p>;
+      })}
+      </div>
+     
     </div>
   );
 };
