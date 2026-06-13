@@ -39,9 +39,13 @@ const todolist = () => {
         </button>
       </div>
 
-      <div className="flex justify-center items-center gap-2 rounded-lg bg-green-900 ">
+      <div className="flex flex-col justify-center items-center gap-2 rounded-lg bg-green-900 w-5/6 p-2 mt-2">
          {tasks.map((element, index) => {
-        return <p key={index} className="flex justify-center items-center w-80 border-white border-2 text-white text-2xl">{element}</p>;
+        return <p key={index} className="flex justify-start items-center w-full border-white border-2 text-white rounded-md px-2.5 py-2 text-2xl">{element}
+        <button>
+          
+        </button>
+        </p>;
       })}
       </div>
      
