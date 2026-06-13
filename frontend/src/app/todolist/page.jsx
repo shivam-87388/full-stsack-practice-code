@@ -15,6 +15,8 @@ const todolist = () => {
   const handelAdd = () => {
     if (task.trim() === "") return;
     setTasks([...tasks, task]);
+    setTask("");
+
     console.log([...tasks, task]);
   };
   const handelDelete = (index) => {
@@ -33,14 +35,17 @@ const todolist = () => {
           <input
             value={task}
             onChange={handelChange}
+            onClick={handelAdd}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handelAdd();
+              }
+            }}
             type="text"
             placeholder="enter task"
             className="md:w-lg w-64 h-14 px-4.5 text-2xl rounded-lg border-2 border-black"
           ></input>
-          <button
-            onClick={handelAdd}
-            className="flex items-center justify-center px-6 h-14 text-nowrap cursor-pointer hover:ring-2 ring-black bg-red-800 rounded-lg text-white text-xl md:text-2xl border-2 border-white font-bold font-['Inria_Serif']"
-          >
+          <button className="flex items-center justify-center px-6 h-14 text-nowrap cursor-pointer hover:ring-2 ring-black bg-red-800 rounded-lg text-white text-xl md:text-2xl border-2 border-white font-bold font-['Inria_Serif']">
             Add task
           </button>
         </div>
