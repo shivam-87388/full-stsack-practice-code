@@ -39,11 +39,11 @@ const todolist = () => {
         </button>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-2 rounded-lg bg-green-900 w-5/6 p-2 mt-2">
+      <div className="flex flex-col justify-center items-center gap-2 rounded-lg bg-green-900 w-3/5 p-2 mt-2">
          {tasks.map((element, index) => {
-        return <p key={index} className="flex justify-start items-center w-full border-white border-2 text-white rounded-md px-2.5 py-2 text-2xl">{element}
-        <button className="flex justify-end items-center">
-         <IconTrash stroke={2} />
+        return <p key={index} className="flex justify-between items-center w-full border-white border-2 text-white rounded-md px-2.5 py-2 text-2xl">{element}
+        <button className="p-2 rounded-md bg-cyan-500 hover:bg-cyan-600 hover:cursor-pointer">
+         <IconTrash stroke={2} size={25} />
         </button>
         </p>;
       })}
