@@ -23,7 +23,7 @@ const todolist = () => {
       <h1 className="text-center text-black text-5xl font-bold font-['Inria_Serif'] p-2">
         To Do list
       </h1>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4 p-2">
         <input
           value={task}
           onChange={handelChange}
@@ -38,10 +38,10 @@ const todolist = () => {
           Add task
         </button>
       </div>
-      
-      <div>
+
+      <div className="flex justify-center items-center gap-2 rounded-lg bg-green-900 ">
          {tasks.map((element, index) => {
-        return <p key={index}>{element}</p>;
+        return <p key={index} className="flex justify-center items-center w-80 border-white border-2 text-white text-2xl">{element}</p>;
       })}
       </div>
      
