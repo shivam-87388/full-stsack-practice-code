@@ -11,7 +11,7 @@ const todolist = () => {
  const [tasks, setTasks] = useState([]);
 
  const handelChange =(e)=>{
-  
+setTasks([e.target.value]);
  };
 
  const  handelclick =()=>{
