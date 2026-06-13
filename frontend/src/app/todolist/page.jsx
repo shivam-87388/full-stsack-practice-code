@@ -17,6 +17,9 @@ const todolist = () => {
     setTasks([...tasks, task]);
     console.log([...tasks, task]);
   };
+  const handelDelete = ()=>{
+
+  }
 
   return (
     <div className=" flex items-center justify-center p-6 flex-col w-full">
@@ -42,7 +45,7 @@ const todolist = () => {
       <div className="flex flex-col justify-center items-center gap-2 rounded-lg bg-green-900 w-3/5 p-2 mt-2">
          {tasks.map((element, index) => {
         return <p key={index} className="flex justify-between items-center w-full border-white border-2 text-white rounded-md px-2.5 py-2 text-2xl">{element}
-        <button className="p-2 rounded-md bg-cyan-500 hover:bg-cyan-600 hover:cursor-pointer">
+        <button onClick={handelDelete} key={index} className="p-2 rounded-md bg-cyan-500 hover:bg-cyan-600 hover:cursor-pointer">
          <IconTrash stroke={2} size={25} />
         </button>
         </p>;
