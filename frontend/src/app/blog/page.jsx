@@ -5,7 +5,7 @@ import { blogs } from "./data";
 const blog = () => {
   return (
    <section className="text-gray-600 body-font bg-green-500">
-    <h1 >Blogs</h1>
+    <h1 className=" flex justify-center items-center text-white mt-4 p-2.5 text-2xl font-bold ">Blogs</h1>
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap -m-4">
       <div className="p-4 md:w-1/3 bg-blue-500">
