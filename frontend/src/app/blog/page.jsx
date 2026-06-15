@@ -1,3 +1,30 @@
+/*
+data.js
+   ↓
+Blogs Array
+   ↓
+map()
+   ↓
+element = first object
+   ↓
+Card 1
+
+element = second object
+   ↓
+Card 2
+
+element = third object
+   ↓
+Card 3
+   ↓
+Click Card
+   ↓
+/blog/html
+   ↓
+[slug]/page.jsx
+ */
+
+
 import Link from "next/link";
 import { Blogs } from "./data";
 
