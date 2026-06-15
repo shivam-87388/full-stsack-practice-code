@@ -16,4 +16,9 @@ export const Blogs =[
         desc: "lorem ipsum",
     },
     
+    {
+        slug: "blog4",
+        title: "how to make dynamic route", 
+        desc: "lorem ipsum",
+    },
 ];
