@@ -10,5 +10,24 @@ export const Blogs =[
         title: "how to make dynamic route", 
         desc: "lorem ipsum",
     },
+    {
+        slug: "blog3",
+        title: "how to make dynamic route", 
+        desc: "lorem ipsum",
+    },
     
+    {
+        slug: "blog4",
+        title: "how to make dynamic route", 
+        desc: "lorem ipsum",
+    },
+
+    {
+        slug: "blog5",
+        title: "how to make dynamic route", 
+        desc: "lorem ipsum",
+    },
+https://github.com/shivam-87388
+
+
 ];
