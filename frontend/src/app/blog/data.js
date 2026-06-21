@@ -27,7 +27,7 @@ export const Blogs =[
         title: "how to make dynamic route", 
         desc: "lorem ipsum",
     },
-https://github.com/shivam-87388
+
 
 
 ];
