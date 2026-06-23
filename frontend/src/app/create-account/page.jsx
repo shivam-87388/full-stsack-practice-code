@@ -32,7 +32,7 @@ const page = () => {
         <div className="flex items-start justify-start flex-col gap-0.5 p-1">
           <label htmlFor="user-email">Email</label>
           <input
-            type="text"
+            type="email"
             id="user-email"
             placeholder="example@gmail.com"
             className=" rounded-md border-2 border-gray-200 p-2  w-64"
