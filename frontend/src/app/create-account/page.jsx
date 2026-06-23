@@ -29,7 +29,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-start flex-col gap-0.5 p-1">
+        <div className="flex items-start justify-start flex-col gap-0.5 p-1">
           <label htmlFor="user-email">Email</label>
           <input
             type="text"
