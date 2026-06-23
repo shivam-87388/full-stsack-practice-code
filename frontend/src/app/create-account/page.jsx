@@ -4,9 +4,9 @@ const page = () => {
   return (
     <main className=" flex items-center justify-center min-h-screen bg-gray-200">
       <form className="flex  flex-col justify-center bg-white p-4 rounded-lg ">
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center ">
         <h1 className="  text-xl p-2 font-bold"> Create account</h1>
-        <a href="https://example.com" className="flex items-center justify-center ">Visit Example Website</a>
+        <a href="https://example.com" className="">Visit Example Website</a>
         </div>
         <div className="flex flex-row justify-between gap-2.5">
           <div className="flex flex-col p-1 w-32">
