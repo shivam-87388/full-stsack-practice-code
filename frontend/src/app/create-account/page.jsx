@@ -35,21 +35,21 @@ const page = () => {
             type="text"
             id="user-email"
             placeholder="example@gmail.com"
-            className=" rounded-md border-2 border-gray-200 p-2 w-md"
+            className=" rounded-md border-2 border-gray-200 p-2  w-64"
           ></input>
         </div>
-        <div className="flex flex-col gap-0.5 p-1">
+        <div className="flex flex-col gap-0.5 p-1 ">
           <label htmlFor="user-password">Password</label>
           <input
             type="password"
             id="user-password"
             placeholder="enter password"
-            className="p-2 rounded-md border-2 border-gray-200"
+            className="p-2 rounded-md border-2 border-gray-200 w-64"
           ></input>
         </div>
         <div className="flex justify-center items-center p-4 ">
 
-        <button className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white">Create account</button>
+        <button className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
         </div>
 
         <div className="flex "></div>
