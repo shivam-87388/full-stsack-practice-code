@@ -5,8 +5,8 @@ const page = () => {
     <main className=" flex items-center justify-center min-h-screen bg-gray-200">
       <form className="flex  flex-col justify-center bg-white p-4 rounded-lg ">
         <div className="flex flex-col items-center justify-center ">
-        <h1 className="text-xl font-bold"> Create account</h1>
-        <a href="https://example.com" className="">Already acoount Sign In</a>
+        <h1 className="text-xl font-bold">Create account</h1>
+        <a href="https://example.com" className="text-sm text-blue-600 hover:text-blue-700 hover:underline-offset-0">Already acoount Sign In</a>
         </div>
         <div className="flex flex-row justify-between gap-2.5">
           <div className="flex flex-col p-1 w-32">
