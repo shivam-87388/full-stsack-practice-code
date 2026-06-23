@@ -47,9 +47,9 @@ const page = () => {
             className="p-2 rounded-md border-2 border-gray-200"
           ></input>
         </div>
-        <div className="flex justify-center items-center p-4 font-bold">
+        <div className="flex justify-center items-center p-4 ">
 
-        <button className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md text-white">Create account</button>
+        <button className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white">Create account</button>
         </div>
 
         <div className="flex "></div>
