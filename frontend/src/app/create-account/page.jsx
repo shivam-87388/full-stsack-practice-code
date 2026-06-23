@@ -25,7 +25,7 @@ const page = () => {
               placeholder="jix"
               require
               className="rounded-md  border-2 border-gray-200 p-2"
-            ></input>
+            />
           </div>
         </div>
 
