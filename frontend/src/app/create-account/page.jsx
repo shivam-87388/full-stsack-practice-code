@@ -6,12 +6,12 @@ const page = () => {
       <form className="flex  flex-col justify-center bg-white p-4 rounded-lg ">
         <div className="flex flex-col items-center justify-center ">
         <h1 className="text-xl font-bold">Create account</h1>
-        <a href="https://example.com" className="text-sm text-blue-700 hover:text-blue-800 hover:underline hover:decoration-2">Already account? Sign In</a>
+        <a href="https://example.com" className="text-sm text-blue-700 hover:text-blue-800 hover:underline hover:decoration-2">Already account ? Sign In</a>
         </div>
         <div className="flex flex-row justify-between gap-2.5">
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="firstname">First Name</label>
-            <input
+            <input onChange={handelfristname}
               type="text"
               id="firstname"
               placeholder="john"
@@ -22,7 +22,7 @@ const page = () => {
           </div>
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="lastname">Last Name</label>
-            <input
+            <input onChange={handellastname}
               type="text"
               id="lastname"
               placeholder="jix"
@@ -63,8 +63,6 @@ const page = () => {
         <div className="flex justify-center items-center p-4 ">
         <button className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
         </div>
-
-       
       </form>
     </main>
   );
