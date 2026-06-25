@@ -15,7 +15,7 @@ const page = () => {
     setFormdata(e.target.value)
 
   };
-  const handelSubmit = 
+  
   return (
     <main className=" flex items-center justify-center min-h-screen bg-gray-200">
       <form className="flex  flex-col justify-center bg-white p-4 rounded-lg ">
@@ -76,7 +76,7 @@ const page = () => {
         </div>
 
         <div className="flex justify-center items-center p-4 ">
-        <button onSubmit={handelSubmit} className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
+        <button  className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
         </div>
       </form>
     </main>
