@@ -12,7 +12,7 @@ const page = () => {
   });
 
   const handelChange = (e)=>{
-    setFormdata(e.target.value)
+    setFormdata( id, e.target.value)
 
   };
   
@@ -27,6 +27,7 @@ const page = () => {
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="firstname">First Name</label>
             <input onChange={handelChange}
+            id={firstname}
               type="text"
               id="firstname"
               placeholder="john"
