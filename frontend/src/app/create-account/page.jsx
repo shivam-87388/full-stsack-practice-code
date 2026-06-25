@@ -11,7 +11,9 @@ const page = () => {
     confirmPassword: "",
   });
 
-  const handelchange
+  const handelchange = (e)=>{
+
+  }
   return (
     <main className=" flex items-center justify-center min-h-screen bg-gray-200">
       <form className="flex  flex-col justify-center bg-white p-4 rounded-lg ">
@@ -22,7 +24,7 @@ const page = () => {
         <div className="flex flex-row justify-between gap-2.5">
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="firstname">First Name</label>
-            <input onChange={handelfristname}
+            <input onChange={handelchange}
               type="text"
               id="firstname"
               placeholder="john"
@@ -33,7 +35,7 @@ const page = () => {
           </div>
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="lastname">Last Name</label>
-            <input onChange={handellastname}
+            <input onChange={handelchange}
               type="text"
               id="lastname"
               placeholder="jix"
