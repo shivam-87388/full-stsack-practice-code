@@ -11,7 +11,7 @@ const page = () => {
     confirmPassword: "",
   });
 
-  const handelchange = (e)=>{
+  const handelChange = (e)=>{
 
   }
   return (
@@ -24,7 +24,7 @@ const page = () => {
         <div className="flex flex-row justify-between gap-2.5">
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="firstname">First Name</label>
-            <input onChange={handelchange}
+            <input onChange={handelChange}
               type="text"
               id="firstname"
               placeholder="john"
@@ -35,7 +35,7 @@ const page = () => {
           </div>
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="lastname">Last Name</label>
-            <input onChange={handelchange}
+            <input onChange={handelChange}
               type="text"
               id="lastname"
               placeholder="jix"
@@ -47,7 +47,7 @@ const page = () => {
 
         <div className="flex items-start justify-start flex-col gap-0.5 p-1">
           <label htmlFor="user-email">Email</label>
-          <input onChange={handelchange}
+          <input onChange={handelChange}
             type="email"
             id="user-email"
             placeholder="example@gmail.com"
@@ -56,7 +56,7 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-0.5 p-1 ">
           <label htmlFor="user-password">Password</label>
-          <input onChange={handelchange}
+          <input onChange={handelChange}
             type="password"
             id="user-password"
             placeholder="enter password"
@@ -65,7 +65,7 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-0.5 p-1 ">
           <label htmlFor="confirm-password">Confirm Password</label>
-          <input onChange={}
+          <input onChange={handelChange}
             type="password"
             id="confirm-password"
             placeholder="enter confirm password"
@@ -74,7 +74,7 @@ const page = () => {
         </div>
 
         <div className="flex justify-center items-center p-4 ">
-        <button className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
+        <button onSubmit={handelsubmit} className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
         </div>
       </form>
     </main>
