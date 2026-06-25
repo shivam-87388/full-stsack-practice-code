@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 
 const page = () => {
+
+  const [formdata , setFormdata]
   return (
     <main className=" flex items-center justify-center min-h-screen bg-gray-200">
       <form className="flex  flex-col justify-center bg-white p-4 rounded-lg ">
