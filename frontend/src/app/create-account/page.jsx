@@ -47,7 +47,7 @@ const page = () => {
 
         <div className="flex items-start justify-start flex-col gap-0.5 p-1">
           <label htmlFor="user-email">Email</label>
-          <input
+          <input onChange={handelchange}
             type="email"
             id="user-email"
             placeholder="example@gmail.com"
