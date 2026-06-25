@@ -4,7 +4,7 @@ import { useState } from "react";
 const page = () => {
 
   const [formdata , setFormdata] = useState({
-    fullname: "",
+    firstname: "",
     lastname: "",
     email: "",
     password:"",
