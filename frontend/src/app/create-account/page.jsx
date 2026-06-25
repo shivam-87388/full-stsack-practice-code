@@ -65,7 +65,7 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-0.5 p-1 ">
           <label htmlFor="confirm-password">Confirm Password</label>
-          <input
+          <input onChange={}
             type="password"
             id="confirm-password"
             placeholder="enter confirm password"
