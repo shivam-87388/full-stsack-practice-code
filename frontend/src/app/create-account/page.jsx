@@ -10,6 +10,8 @@ const page = () => {
     password:"",
     confirmPassword: "",
   });
+
+  const handelchange
   return (
     <main className=" flex items-center justify-center min-h-screen bg-gray-200">
       <form className="flex  flex-col justify-center bg-white p-4 rounded-lg ">
