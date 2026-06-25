@@ -56,7 +56,7 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-0.5 p-1 ">
           <label htmlFor="user-password">Password</label>
-          <input
+          <input onChange={handelchange}
             type="password"
             id="user-password"
             placeholder="enter password"
