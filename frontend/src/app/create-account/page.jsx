@@ -16,7 +16,7 @@ const page = () => {
 
   };
   const handelSubmit = ()=>{
-    
+    setFormdata()
   }
   
   return (
