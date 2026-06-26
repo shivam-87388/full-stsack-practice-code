@@ -15,6 +15,9 @@ const page = () => {
     setFormdata( id, e.target.value)
 
   };
+  const handelSubmit = ()=>{
+    
+  }
   
   return (
     <main className=" flex items-center justify-center min-h-screen bg-gray-200">
