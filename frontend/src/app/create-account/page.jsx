@@ -10,11 +10,11 @@ const page = () => {
     password:"",
     confirmPassword: "",
   });
-  const 
+ 
 
   const handelChange = (e)=>{
-    setFormdata(...formdata, e.target.value);
-    console.log(...formdata, e.target.value);
+    setFormdata( e.target.value);
+    console.log(e.target.value);
 
 
   };
@@ -34,7 +34,7 @@ const page = () => {
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="firstname">First Name</label>
             <input onChange={handelChange}
-            id={firstname}
+            
             value={e.firstname}
               type="text"
               id="firstname"
