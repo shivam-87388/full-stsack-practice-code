@@ -28,6 +28,7 @@ const page = () => {
             <label htmlFor="firstname">First Name</label>
             <input onChange={handelChange}
             id={firstname}
+            value={e.firstname}
               type="text"
               id="firstname"
               placeholder="john"
