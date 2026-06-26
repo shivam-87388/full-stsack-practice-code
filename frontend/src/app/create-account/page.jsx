@@ -16,6 +16,7 @@ const page = () => {
 
   };
   const handelSubmit = ()=>{
+    e.preventDefault();
     console.log("form submitted", formdata)
   }
   
