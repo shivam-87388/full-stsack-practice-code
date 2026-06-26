@@ -10,9 +10,12 @@ const page = () => {
     password:"",
     confirmPassword: "",
   });
+  const 
 
   const handelChange = (e)=>{
-    setFormdata( id, e.target.value)
+    setFormdata(...formdata, e.target.value);
+    console.log(...formdata, e.target.value);
+
 
   };
   const handelSubmit = ()=>{
