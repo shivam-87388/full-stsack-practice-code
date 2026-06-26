@@ -35,8 +35,7 @@ const page = () => {
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="firstname">First Name</label>
             <input onChange={handelChange}
-            
-            value={e.firstname}
+            value={formdata.firstname}
               type="text"
               id="firstname"
               placeholder="john"
@@ -48,6 +47,7 @@ const page = () => {
           <div className="flex flex-col p-1 w-32">
             <label htmlFor="lastname">Last Name</label>
             <input onChange={handelChange}
+            value={formdata.lastname}
               type="text"
               id="lastname"
               placeholder="jix"
@@ -60,6 +60,7 @@ const page = () => {
         <div className="flex items-start justify-start flex-col gap-0.5 p-1">
           <label htmlFor="user-email">Email</label>
           <input onChange={handelChange}
+          value={formdata.email}
             type="email"
             id="user-email"
             placeholder="example@gmail.com"
