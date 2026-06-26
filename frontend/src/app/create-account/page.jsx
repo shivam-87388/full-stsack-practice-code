@@ -20,6 +20,7 @@ const page = () => {
 
   };
   const handelSubmit = ()=>{
+     if (task.trim() === "") return;
     e.preventDefault();
     console.log("form submitted", formdata)
   }
@@ -70,6 +71,7 @@ const page = () => {
         <div className="flex flex-col gap-0.5 p-1 ">
           <label htmlFor="user-password">Password</label>
           <input onChange={handelChange}
+          value={formdata.password}
             type="password"
             id="user-password"
             placeholder="enter password"
@@ -79,6 +81,7 @@ const page = () => {
         <div className="flex flex-col gap-0.5 p-1 ">
           <label htmlFor="confirm-password">Confirm Password</label>
           <input onChange={handelChange}
+          value={formdata.confirmPassword}
             type="password"
             id="confirm-password"
             placeholder="enter confirm password"
