@@ -78,7 +78,7 @@ const page = () => {
         </div>
 
         <div className="flex justify-center items-center p-4 ">
-        <button  className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
+        <button onSubmit={handelSubmit} className="flex justify-center items-center bg-blue-600 w-fit px-2.5 py-2 rounded-md font-bold text-white hover:cursor-pointer">Create account</button>
         </div>
       </form>
     </main>
