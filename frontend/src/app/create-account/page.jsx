@@ -21,7 +21,7 @@ const Page = () => {
     [name]: value,
   });
   };
-  const handelSubmit = ()=>{
+  const handelSubmit = (e)=>{
      if (task.trim() === "") return;
     e.preventDefault();
     console.log("form submitted", formdata)
@@ -39,7 +39,6 @@ const Page = () => {
             <label htmlFor="firstname">First Name</label>
             <input onChange={handelChange}
             value={formdata.firstname}
-            ket
               type="text"
               id="firstname"
               placeholder="john"
