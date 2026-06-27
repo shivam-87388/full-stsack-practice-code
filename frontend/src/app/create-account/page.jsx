@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
 
   const [formdata , setFormdata] = useState({
     firstname: "",
@@ -100,4 +100,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
