@@ -14,8 +14,8 @@ const page = () => {
  
 
   const handelChange = (e)=>{
-    setFormdata( e.target.value);
-    console.log(e.target.value);
+    setFormdata({...formdata});
+    
 
 
   };
@@ -37,6 +37,7 @@ const page = () => {
             <label htmlFor="firstname">First Name</label>
             <input onChange={handelChange}
             value={formdata.firstname}
+            ket
               type="text"
               id="firstname"
               placeholder="john"
