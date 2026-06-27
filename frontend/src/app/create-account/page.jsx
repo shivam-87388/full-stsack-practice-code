@@ -14,10 +14,12 @@ const page = () => {
  
 
   const handelChange = (e)=>{
-    setFormdata({...formdata});
-    
+    const { name, value } = e.target;
 
-
+  setFormdata({
+    ...formdata,
+    [name]: value,
+  });
   };
   const handelSubmit = ()=>{
      if (task.trim() === "") return;
