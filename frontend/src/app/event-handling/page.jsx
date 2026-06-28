@@ -4,11 +4,10 @@ import React from 'react'
 
 const page = () => {
 
-    const handelClick = ()=>{
-        console.log("button Clicked");
-    };
-
-    }
+const handelClick = ()=>{
+    console.log("button clicked");
+};
+    
   return (
     <div className="flex justify-center item-center min-h-screen">
         <div className="flex items-center justify-center"> 
