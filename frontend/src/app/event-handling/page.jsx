@@ -14,8 +14,8 @@ const handleClick2 = (e)=>{
   return (
     <div className="flex item-center justify-center min-h-screen">
         <div className="flex flex-col items-center justify-center"> </div>
-        <label>first name</label>
-        <input></input>
+        <label htmlFor='firstname'>first name</label>
+        <input id="firstname" type="text"></input>
 
     </div>
   )
