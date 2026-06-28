@@ -12,12 +12,8 @@ const handleClick2 = (e)=>{
 };
     
   return (
-    <div className="flex justify-center items-center-center min-h-screen">
-        <div className="flex items-center justify-center"> 
+    <div className="flex item-center justify-center min-h-screen">
 
-        <button onClick={handleClick} className=" flex items-center justify-center px-2.5  border-2 border-black rounded-md hover:cursor-pointer bg-blue-800 text-white text-2xl">submit</button>
-        <button onClick={handleClick2} className=" flex items-center justify-center px-2.5  border-2 border-black rounded-md hover:cursor-pointer bg-blue-800 text-white text-2xl">submit</button>
-        </div>
     </div>
   )
 }
