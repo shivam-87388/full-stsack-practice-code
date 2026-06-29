@@ -5,6 +5,8 @@ const page = () => {
     <div className="flex items-center justify-center min-h-screen">
       <form className="flex flex-col items-center justify-center p-4 bg-green-400 rounded-2xl">
         <div className="flex flex-row">
+          <label htmlFor='firstname'>First name</label>
+          <input id="firstname" type="text" className="text-xl rounded-md border-2 border-white"/> 
 
         </div>
         <div className="flex flex-col  justify-center">
