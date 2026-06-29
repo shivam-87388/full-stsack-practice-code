@@ -3,16 +3,16 @@ import React from 'react'
 const page = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <form className="flex flex-col items-center justify-center p-4 bg-green-400 rounded-2xl">
+      <form className="flex flex-col items-center justify-center p-4 bg-green-400 rounded-2xl ">
       <h1 className="text-white text-2xl font-bold mb-2.5"> Create Account</h1>
         <div className="flex flex-row gap-3 w-full ">
           <div className="flex flex-col"> 
           <label htmlFor='firstname'className="text-white text-xl">First name</label>
-          <input placeholder="jhon" id="firstname" type="text" required className="text-xl rounded-md border-2 border-white px-2.5 py-1 "/> 
+          <input placeholder="jhon" id="firstname" type="text" required className="text-xl rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
           </div>
           <div className="flex flex-col "> 
           <label htmlFor='lastname'className="text-white text-xl">Last name</label>
-          <input placeholder="park" id="lastname" type="text" className="text-xl rounded-md border-2 border-white px-2.5 py-1"/> 
+          <input placeholder="park" id="lastname" type="text" className="text-xl rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
           </div>
         
         </div>
@@ -25,7 +25,7 @@ const page = () => {
         <input  placeholder="enter password" id="password" required className="border-2 text-xl text-white border-white rounded-md px-2.5 py-1"/>
         </div>
         <div className="flex flex-col justify-center w-full mb-3">
-        <label htmlFor='confirmpassword' className="text-xl text-white">confirm Password</label>
+        <label htmlFor='confirmpassword' className="text-xl text-white">Confirm Password</label>
         <input placeholder="enter confirm password" required className="border-2 text-xl text-white border-white rounded-md px-2.5 py-1"/>
         </div>
         <button className="bg-yellow-300 px-2.5 py-2 rounded-md font-bold text-white text-xl" >submit</button>
