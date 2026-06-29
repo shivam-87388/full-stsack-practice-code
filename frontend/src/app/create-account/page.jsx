@@ -12,7 +12,7 @@ const page = () => {
           </div>
           <div className="flex flex-col "> 
           <label htmlFor='lastname'className="text-white text-xl">Last name</label>
-          <input placeholder="park" id="lastname" type="text" className="text-xl rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
+          <input placeholder="park" id="lastname" type="text" className="text-xl text-white rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
           </div>
         
         </div>
