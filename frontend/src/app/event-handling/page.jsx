@@ -10,8 +10,9 @@ const page = () => {
     });
 const handleChange = (e)=>{
     console.log(e.target.value);
-    setData({...data, [e.target.name]: value})
-    console.log({...data, setData})
+    setData({...data, [e.target.name]: e.target.value});
+    console.log({...data, [e.target.name]: e.target.value});
+
     
 
 };
