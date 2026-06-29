@@ -5,10 +5,10 @@ const page = () => {
     <div className="flex items-center justify-center min-h-screen">
       <form className="flex flex-col items-center justify-center p-4 bg-green-400 rounded-2xl ">
       <h1 className="text-white text-2xl font-bold mb-2.5"> Create Account</h1>
-        <div className="flex flex-row gap-3 w-full ">
+        <div className="flex flex-row  gap-3 w-full ">
           <div className="flex flex-col"> 
           <label htmlFor='firstname'className="text-white text-xl">First name</label>
-          <input placeholder="jhon" id="firstname" type="text" required className="text-xl rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
+          <input placeholder="jhon" id="firstname" type="text" required className="text-xl text-white rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
           </div>
           <div className="flex flex-col "> 
           <label htmlFor='lastname'className="text-white text-xl">Last name</label>
