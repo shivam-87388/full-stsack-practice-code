@@ -20,11 +20,11 @@ const page = () => {
         <label htmlFor='email' className="text-xl text-white">Email</label>
         <input className="border-2 text-white text-xl border-white rounded-md px-2.5 py-1"/>
         </div>
-        <div className="flex flex-col justify-center w-full">
+        <div className="flex flex-col justify-center w-full mb-3">
         <label htmlFor='password' className="text-xl text-white">Password</label>
         <input className="border-2 text-xl text-white border-white rounded-md px-2.5 py-1"/>
         </div>
-        <button className="bg-yellow-300 px-2.5 py-2 rounded-md text-white text-xl" >submit</button>
+        <button className="bg-yellow-300 px-2.5 py-2 rounded-md fonnt-bold text-white text-xl" >submit</button>
        </form>
     </div>
   )
