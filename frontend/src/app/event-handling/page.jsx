@@ -31,7 +31,7 @@ const handleChange = (e)=>{
         <label htmlFor="lastname" className="text-xl">
             last name
         </label> 
-        <input value={data.lastname} name="lastname" onChange={handleChange} id="lastname" type="text"  placeholder='fix' className="rounded-md p-1.5 border-2 text-xl border-black" />
+        <input value={data.lastname} onChange={handleChange} name="lastname"id="lastname" type="text"  placeholder='fix' className="rounded-md p-1.5 border-2 text-xl border-black" />
         </div>
 
         <button className="text-xl bg-blue-600 hover:cursor-pointer px-2.5 py-2 text-white border-white border-2 rounded-md  hover:ring-2 ring-black"> submit</button>
