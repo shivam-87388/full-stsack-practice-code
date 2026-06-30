@@ -2,14 +2,14 @@ import React from 'react'
 import { Formik, useFormik } from 'formik'
 
 const page = () => {
-const Formik = useFormik({
+const formik = useFormik({
   initialValues:{
     firstname:"",
     lastname:"",
     password:"",
     confirmpassword:"",
   },
-  onsubmit
+  
 })
   return (
     <div className="flex items-center justify-center min-h-screen">
