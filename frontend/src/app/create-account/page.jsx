@@ -1,5 +1,6 @@
+'use client'
 import React from 'react'
-import { useFormik } from 'formik'
+import { Formik } from 'formik'
 
 const page = () => {
 const formik = useFormik({
