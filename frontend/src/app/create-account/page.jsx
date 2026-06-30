@@ -14,15 +14,17 @@ const createaccount = useFormik({
   },
   onSubmit:(value)=>{
     console.log(value);
+    toast.success("Successfully account created");
+    toast.error(error);
   },
 
- toast.success('Successfully toasted!'{position="top-center"})
 
   
 })
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <form onSubmit={createaccount.handleSubmit} className="flex flex-col items-center justify-center p-4 bg-green-400 rounded-2xl ">
+      <Toaster position="top-center"/>
+      <form  onSubmit={createaccount.handleSubmit} className="flex flex-col items-center justify-center p-4 bg-green-400 rounded-2xl ">
       <h1 className="text-white text-2xl font-bold mb-2.5"> Create Account</h1>
         <div className="flex flex-row  gap-3 w-full ">
           <div className="flex flex-col"> 
