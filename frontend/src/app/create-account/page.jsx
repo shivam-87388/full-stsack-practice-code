@@ -16,6 +16,8 @@ const createaccount = useFormik({
     console.log(value);
   },
 
+ toast.success('Successfully toasted!'{position="top-center"})
+
   
 })
   return (
