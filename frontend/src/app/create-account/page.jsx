@@ -14,8 +14,11 @@ const createaccount = useFormik({
   },
   onSubmit:(value)=>{
     console.log(value);
+    
+    if (value.password !==confirmpassword) {
+      toast.error("password and confirmpassword is not same");
+    }
     toast.success("Successfully account created");
-    toast.error(error);
   },
 
 
