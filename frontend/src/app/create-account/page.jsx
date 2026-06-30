@@ -11,10 +11,10 @@ const createaccount = useFormik({
     password:"",
     confirmpassword:"",
   },
-  onSubmit:(values)=>{
-    console.log(values)
+  onSubmit:(value)=>{
+    console.log(value);
 
-  }
+  },
 
   
 })
@@ -25,7 +25,7 @@ const createaccount = useFormik({
         <div className="flex flex-row  gap-3 w-full ">
           <div className="flex flex-col"> 
           <label htmlFor='firstname'className="text-white text-xl">First name</label>
-          <input onChange={handleChange} placeholder="jhon" id="firstname" type="text" required className="text-xl text-white rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
+          <input onChange={handleChange} name="firstname" placeholder="jhon" id="firstname" type="text" required className="text-xl text-white rounded-md border-2 border-white px-2.5 py-1 w-44"/> 
           </div>
           <div className="flex flex-col "> 
           <label htmlFor='lastname'className="text-white text-xl">Last name</label>
