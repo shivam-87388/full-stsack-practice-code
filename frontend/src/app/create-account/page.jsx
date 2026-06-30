@@ -1,15 +1,21 @@
 'use client'
 import React from 'react'
-import { Formik } from 'formik'
+import { useFormik } from 'formik'
 
 const page = () => {
-const formik = useFormik({
+const createaccount = useFormik({
   initialValues:{
     firstname:"",
     lastname:"",
+    email:"",
     password:"",
     confirmpassword:"",
   },
+  onSubmit:(values)=>{
+    console.log(values)
+
+  }
+
   
 })
   return (
