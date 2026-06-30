@@ -18,11 +18,8 @@ const createaccount = useFormik({
       toast.error("password is not same");
     }
     else if (value.password === value.confirmpassword){
-
       toast.success('Successfully account created');
     };
-
-    },
   },
 });
   return (
