@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useFormik } from 'formik'
-import toast from 'react-hot-toast'
+import toast, { Toaster } from 'react-hot-toast';
 
 const page = () => {
 const createaccount = useFormik({
@@ -14,16 +14,12 @@ const createaccount = useFormik({
   },
   onSubmit:(value)=>{
     console.log(value);
-    
-    if (value.password !==confirmpassword) {
-      toast.error("password and confirmpassword is not same");
-    }
-    toast.success("Successfully account created");
+    if (value.password !== value.confirmpassword) {
+      toast.error("password is not same") 
+    };
+  toast.success('Successfully account created');
   },
-
-
-  
-})
+});
   return (
     <div className="flex items-center justify-center min-h-screen">
       <Toaster position="top-center"/>
