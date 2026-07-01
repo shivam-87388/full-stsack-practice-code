@@ -40,7 +40,7 @@ import React from 'react'
 
 const page = () => {
   return (
-   <div className="min-h-screen px-[512px] py-60 bg-white inline-flex justify-center items-center gap-2.5">
+   <div className="min-h-screen w-full   bg-white inline-flex justify-center items-center gap-2.5">
   <div className="w-80 h-[528px] max-w-80 min-w-80 px-6 pt-14 pb-24 bg-zinc-300 rounded-3xl inline-flex flex-col justify-start items-start gap-2.5">
     <div className="self-stretch flex flex-col justify-start items-center gap-20">
       <h1 className="self-stretch text-center justify-start text-black text-xl font-bold font-['Inter']">Login </h1>
