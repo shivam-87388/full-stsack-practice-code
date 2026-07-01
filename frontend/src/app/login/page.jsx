@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
  */
 
-function ExtractedItem({
+/*function ExtractedItem({
   text10
 }: any) {
   return <div className="w-[272px] h-full relative self-stretch grow-0 shrink-0 flex flex-col bg-[rgba(0,0,0,0)]">
@@ -16,7 +16,7 @@ function ExtractedItem({
             </svg>
           </div>;
 }
-const Desktop1Component = () => {
+const page = () => {
   return <div className="relative w-full min-h-[789px] flex flex-row justify-center items-center gap-[10px] bg-white px-[512px] py-[248px]">
   <div className="w-[320px] h-[528px] relative grow-0 shrink-0 flex flex-col gap-[10px] bg-[rgba(217,217,217,1)] pt-[56px] pb-[92px] px-[24px] rounded-[21px]">
     <div className="w-[272px] h-full relative self-stretch grow-0 shrink-0 flex flex-col items-center gap-[80px] bg-[rgba(0,0,0,0)]">
@@ -34,4 +34,35 @@ const Desktop1Component = () => {
   </div>
   </div>;
 };
-export default Desktop1Component;
+export default page; */
+
+import React from 'react'
+
+const page = () => {
+  return (
+   <div className="min-h-screen px-[512px] py-60 bg-white inline-flex justify-center items-center gap-2.5">
+  <div className="w-80 h-[528px] max-w-80 min-w-80 px-6 pt-14 pb-24 bg-zinc-300 rounded-3xl inline-flex flex-col justify-start items-start gap-2.5">
+    <div className="self-stretch flex flex-col justify-start items-center gap-20">
+      <h1 className="self-stretch text-center justify-start text-black text-xl font-bold font-['Inter']">Login </h1>
+      <div className="self-stretch flex flex-col justify-start items-center gap-24">
+        <div className="self-stretch flex flex-col justify-start items-start gap-6">
+          <div className="self-stretch flex flex-col justify-start items-start">
+            <div className="self-stretch justify-start text-black text-xl font-bold font-['Inter']">Email </div>
+            <div className="self-stretch h-8 bg-zinc-300 rounded-md border border-black" />
+          </div>
+          <div className="self-stretch flex flex-col justify-start items-start">
+            <div className="self-stretch justify-start text-black text-xl font-bold font-['Inter']">Password </div>
+            <div className="self-stretch h-8 bg-zinc-300 rounded-md border border-black" />
+          </div>
+        </div>
+        <div className="px-4 py-2.5 bg-blue-800 rounded-[5px] inline-flex justify-center items-center gap-2.5">
+          <div className="justify-start text-white text-xl font-bold font-['Inter']">Login</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  )
+}
+
+export default page
