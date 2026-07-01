@@ -35,10 +35,23 @@ const page = () => {
   </div>;
 };
 export default page; */
-
+'use client'
 import React from 'react'
+import { useFormik } from 'formik';
 
 const page = () => {
+const loginform = useFormik({
+  initialValues:{
+    email:"",
+    password:"",
+  },
+  onSubmit:(value)=>{
+    console.log(value);
+
+  },
+
+  
+});
   return (
    <div className="min-h-screen w-full   bg-white inline-flex justify-center items-center gap-2.5">
   <div className="w-80 h-132 max-w-80 min-w-80 px-6 pt-14 pb-24 bg-zinc-300 rounded-3xl inline-flex flex-col justify-start items-start gap-2.5">
@@ -65,4 +78,4 @@ const page = () => {
   )
 }
 
-export default page
+export default page;
