@@ -47,17 +47,17 @@ const page = () => {
       <div className="self-stretch flex flex-col justify-start items-center gap-24">
         <div className="self-stretch flex flex-col justify-start items-start gap-6">
           <div className="self-stretch flex flex-col justify-start items-start">
-            <div className="self-stretch justify-start text-black text-xl font-bold font-['Inter']">Email </div>
-            <div className="self-stretch h-8 bg-zinc-300 rounded-md border border-black" />
+            <label className="self-stretch justify-start text-black text-xl font-bold font-['Inter']">Email </label>
+            <input className="self-stretch h-8 bg-zinc-300 rounded-md border border-black" />
           </div>
           <div className="self-stretch flex flex-col justify-start items-start">
             <div className="self-stretch justify-start text-black text-xl font-bold font-['Inter']">Password </div>
             <div className="self-stretch h-8 bg-zinc-300 rounded-md border border-black" />
           </div>
         </div>
-        <div className="px-4 py-2.5 bg-blue-800 rounded-[5px] inline-flex justify-center items-center gap-2.5">
-          <div className="justify-start text-white text-xl font-bold font-['Inter']">Login</div>
-        </div>
+        <button className="flex justify-center items-center w-full px-4 py-2.5 bg-blue-800 rounded-[5px] gap-2.5 text-white text-xl font-bold font-['Inter'] ">Log in
+        
+        </button>
       </div>
     </div>
   </div>
