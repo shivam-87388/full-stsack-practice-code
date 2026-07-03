@@ -4,5 +4,5 @@ import todo from "../models/todo.js"
 const todorouter = express();
 
 todorouter.get("/todo",(req,res)=>{
-    res.send("sucessfull", send);
+    res.send("sucessfull sned result");
 })
