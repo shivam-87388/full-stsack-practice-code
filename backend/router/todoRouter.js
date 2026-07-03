@@ -9,7 +9,8 @@ todorouter.get("/getall",(req,res)=>{
 
 //post method
 todorouter.post("/add",(req,res)=>{
-    res.send("add todo");
+    console.log(req.body)
+    res.send({Message:"add todo",data:req.body})
 });
 
 export default todorouter;
