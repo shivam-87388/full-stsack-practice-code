@@ -6,6 +6,8 @@ const todorouter = express();
 todorouter.get("/todo",(req,res)=>{
     res.send("sucessfull sned result");
 });
+
+//post method
 todorouter.post("/todo",(req,res)=>{
     res.send("sucessfull sned result");
 });
