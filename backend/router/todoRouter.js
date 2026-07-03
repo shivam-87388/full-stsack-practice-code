@@ -4,7 +4,7 @@ import todo from "../models/todo.js"
 const todorouter = express.Router();
  //get method
 todorouter.get("/getall",(req,res)=>{
-    res.send("sucessfull sned result");
+    res.send("sucessfull all todo result");
 });
 
 //post method
