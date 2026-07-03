@@ -1,9 +1,9 @@
 import express from "express";
 import todo from "../models/todo.js"
 
-const todorouter = express();
+const todorouter = express.Router();
  //get method
-todorouter.get("/",(req,res)=>{
+todorouter.get("/getall",(req,res)=>{
     res.send("sucessfull sned result");
 });
 
