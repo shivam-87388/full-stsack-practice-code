@@ -11,3 +11,5 @@ todorouter.get("/getall",(req,res)=>{
 todorouter.post("/add",(req,res)=>{
     res.send("add todo");
 });
+
+export default todorouter;
