@@ -7,12 +7,12 @@ const page = () => {
     <div className="w-full min-h-screen p-2.5 bg-zinc-400 inline-flex justify-center items-center gap-2.5 overflow-hidden">
   <div className="w-56 h-116 max-w-56 pt-16 pb-2.5 bg-white rounded-xl flex justify-center items-center gap-2.5">
     <div className="flex-1 h-64 py-2 bg-white flex flex-col justify-center items-center gap-3.5">
-        <div className="flex flex-row">
-
+        <div className="flex flex-row items-center justify-center">
+<div className="w-8 px-1.5 py-1.5 bg-neutral-200/40 rounded-lg shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] flex justify-center items-center gap-2.5 text-black text-xl font-normal font-['Arial_Rounded_MT_Bold']">AC
         </div>
       
-<div className="w-8 px-1.5 py-1.5 bg-neutral-200/40 rounded-lg shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] flex flex-col justify-center items-center gap-2.5 text-black text-xl font-normal font-['Arial_Rounded_MT_Bold']">
-  <div className="text-center justify-start ">AC</div>
+
+ 
 </div>
 
       <div className="self-stretch inline-flex justify-center items-center gap-3.5">
