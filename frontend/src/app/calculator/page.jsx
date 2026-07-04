@@ -5,7 +5,7 @@ import { Icon, IconBackspace } from '@tabler/icons-react';
 const page = () => {
   return (
     <div className="w-full min-h-screen p-2.5 bg-zinc-400 inline-flex justify-center items-center gap-2.5 overflow-hidden">
-  <div className="w-56 h-[464px] max-w-56 pt-16 pb-2.5 bg-white rounded-xl inline-flex justify-center items-center gap-2.5">
+  <div className="w-56 h-116 max-w-56 pt-16 pb-2.5 bg-white rounded-xl inline-flex justify-center items-center gap-2.5">
   <div className="flex-1 h-64 py-2 bg-white inline-flex flex-col justify-center items-center gap-3.5">
     <div className="self-stretch inline-flex justify-center items-center gap-3.5">
       <div className="w-8 px-1.5 py-1.5 bg-neutral-200/40 rounded-lg shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-center items-center gap-2.5">
