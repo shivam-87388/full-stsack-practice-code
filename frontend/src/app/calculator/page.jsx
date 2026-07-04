@@ -1,4 +1,6 @@
 import React from 'react'
+import { Icon, IconBackspace } from '@tabler/icons-react';
+
 
 const page = () => {
   return (
@@ -13,7 +15,7 @@ const page = () => {
           <div className="self-stretch text-center justify-start text-black text-xl font-normal font-['Arial_Rounded_MT_Bold']">%</div>
         </div>
         <div className="w-8 h-9 px-1.5 py-1.5 bg-zinc-100 rounded-lg shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
-          <div className="self-stretch h-4 outline  outline-black" />
+          <IconBackspace/>
         </div>
         <div className="w-8 h-9 px-1.5 py-1.5 bg-zinc-100 rounded-lg shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
           <div className="w-6 h-6 relative overflow-hidden">
