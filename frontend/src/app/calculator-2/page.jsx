@@ -6,7 +6,7 @@ const page = () => {
   return (
    <div className="w-full min-h-screen flex flex-col items-center justify-center">
 
-<div className="shadow-[0px_0px_35px_1px_rgba(0,0,0,0.25)] p-4 rounded-lg"> 
+<div className="shadow-[0px_0px_35px_1px_rgba(0,0,0,0.25)] p-1.5 rounded-lg"> 
   
  {/* row-1 */}
     <div className="flex flex-row gap-3.5 p-2">
