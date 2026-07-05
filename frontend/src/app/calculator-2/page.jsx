@@ -7,9 +7,10 @@ const page = () => {
    <div className="w-full min-h-screen flex flex-col items-center justify-center">
 
 <div className="shadow-[0px_0px_35px_1px_rgba(0,0,0,0.25)] p-1.5 rounded-lg"> 
+  <input className="w-full h-32 text-2xl border-2 border-black"/>
   
  {/* row-1 */}
-    <div className="flex flex-row gap-3.5 p-2">
+    <div className="flex flex-row gap-3.5 p-2 rounded-md">
       <button className="flex-1 w-24 bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">AC</button>
       <button className=" flex-1 w-24  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">%</button>
       <button className="flex-1 flex items-center justify-center w-24 bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]"><IconBackspace/></button>
