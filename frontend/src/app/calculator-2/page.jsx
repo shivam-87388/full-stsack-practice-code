@@ -41,9 +41,11 @@ const page = () => {
       <button className="flex-1 w-24 bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">00</button>
       <button className=" flex-1 w-24 bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">0</button>
       <button className="flex-1 flex items-center justify-center w-24 bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">.</button>
-      <button className="flex-1  flex items-center justify-center w-24 bg-[#FF7700] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]"><IconEqual/></button>
+      <button className="flex-1  flex items-center justify-center w-24 bg-[#FF7700] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]"><IconEqual color="white"/></button>
     </div>
     </div>
+    
+
 
 </div>
  
