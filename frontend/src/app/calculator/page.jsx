@@ -7,8 +7,8 @@ const page = () => {
   const [value, setValue] = useState();
 
   const handleClick =()=>{
-    setValue(value)
-    console.log(value)
+    setValue(value);
+    console.log(value);
 
   }
 
