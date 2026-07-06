@@ -4,12 +4,13 @@ import { IconDivide , IconX , IconBackspace , IconMinus , IconPlus, IconEqual } 
 
 
 const page = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("");
+  
 
-  const handleClick =()=>{
-    setValue(value);
-    console.log(value);
-
+  const handleClick =(e)=>{
+    setValue(e.target.value);
+    console.log(e.target.value);
+    
   }
 
   return (
