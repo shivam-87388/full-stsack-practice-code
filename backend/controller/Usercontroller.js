@@ -1,3 +1,3 @@
 
-const
-const a= 54
+const a1 =42
+const a = 54
