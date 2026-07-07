@@ -1,3 +1,4 @@
 
 const a1 =42
-const a = 54
+let a = 54
+
