@@ -30,7 +30,7 @@ const page = () => {
     <div className="flex flex-row gap-3.5  p-2 ">
       <button value="7" onClick={handleClick} className="flex-1 bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">7</button>
       <button value="values" onClick={handleClick} className="flex-1  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">8</button>
-      <button value="values" onClick={()=>{handleClick("9")}} className="flex-1 flex items-center justify-center bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">9</button>
+      <button value="values" onClick={handleClick} className="flex-1 flex items-center justify-center bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">9</button>
       <button onClick={()=>{handleClick("*")}} className="flex-1  flex items-center justify-center bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]"><IconX/></button>
     </div>
     {/* row-3 */}
