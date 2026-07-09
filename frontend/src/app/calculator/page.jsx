@@ -10,6 +10,7 @@ const page = () => {
   const handleClick =(e)=>{
     setvalues(e.target.value);
     console.log(e.target.value);
+    setvalues("");
     
   }
 
@@ -49,7 +50,7 @@ const page = () => {
     </div>
       {/* row-5 */}
     <div className="flex flex-row gap-3.5  p-2 ">
-      <button value="values" oonClick={handleClick} className="flex-1  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">00</button>
+      <button value="values" onClick={handleClick} className="flex-1  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">00</button>
       <button value="values" onClick={handleClick} className=" flex-1  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">0</button>
       <button onClick={handleClick} className="flex-1 flex items-center justify-center  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">.</button>
       <button onClick={handleClick} className="flex-1  flex items-center justify-center  bg-[#FF7700] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]"><IconEqual color="white"/></button>
