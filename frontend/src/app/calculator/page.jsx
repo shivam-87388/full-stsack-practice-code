@@ -13,7 +13,7 @@ const page = () => {
     setvalues("");
     
   };
-  const handleAc = ()=>{
+  const handleAc = (e)=>{
     setvalues("");
   } 
 
