@@ -8,8 +8,8 @@ const page = () => {
   
 
   const handleClick =(e)=>{
-    setvalues(e.target.value);
-    console.log(e.target.value);
+    setvalues((previous)=>previous+ e.target.value);
+   
 
     
   };
