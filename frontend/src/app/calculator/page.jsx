@@ -12,9 +12,9 @@ const page = () => {
     console.log(e.target.value);
     setvalues("");
     
-  }
+  };
   const handleAc = ()=>{
-    setvalues
+    setvalues("");
   } 
 
   return (
