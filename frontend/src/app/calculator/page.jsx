@@ -21,7 +21,8 @@ const page = () => {
    <div className="w-full min-h-screen flex flex-col items-center justify-center p-5">
 
 <div className="shadow-[0px_0px_35px_1px_rgba(0,0,0,0.25)] p-1.5 rounded-lg"> 
-  <input type="text" value={value} readOnly className="text-end w-full h-24 text-3xl border-2 border-black p-2 text-black font-bold rounded-lg mb-2"/>
+  <input type="text" value={value} placeholder="0" readOnly className="text-end w-full h-24 text-3xl border-2 border-black p-2 text-black font-bold rounded-lg mb-2"
+  {value.map}/>
   
  {/* row-1 */}
     <div className="flex flex-row gap-3.5 p-2 rounded-md">
