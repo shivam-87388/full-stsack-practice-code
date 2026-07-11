@@ -10,7 +10,7 @@ const page = () => {
   const handleClick =(e)=>{
     setvalues((previous)=> previous + e.target.value);
    
-
+const
     
   };
   const handleClear = ()=>{
