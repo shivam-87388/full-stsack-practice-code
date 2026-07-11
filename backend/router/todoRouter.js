@@ -4,8 +4,12 @@ import todo from "../models/todo.js"
 const todorouter = express.Router();
  //get method
 todorouter.get("/getall",async(req,res)=>{
-    const todos = await todo.find();
+try{
+const todos = await todo.find();
+res.send
 
+}
+    
    
 });
 
