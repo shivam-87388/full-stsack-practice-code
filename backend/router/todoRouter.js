@@ -9,6 +9,9 @@ const todos = await todo.find();
 res.send
 
 }
+catch{
+
+}
     
    
 });
