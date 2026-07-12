@@ -8,7 +8,7 @@ const page = () => {
   
 
   const handleClick =(e)=>{
-    setvalues((previous)=> previous + e.currentTarget.value);  
+    setvalues((previous)=> previous + e.target.value);  
     console.log((previous)=> previous + e.currentTarget.value);  
   };
   const handleClear = ()=>{
