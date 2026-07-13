@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { IconDivide , IconX , IconBackspace , IconMinus , IconPlus, IconEqual } from '@tabler/icons-react';
+import { IconBackspace } from '@tabler/icons-react';
 
 
 const page = () => {
