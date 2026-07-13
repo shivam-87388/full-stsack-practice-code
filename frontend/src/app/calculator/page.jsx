@@ -17,6 +17,15 @@ const page = () => {
   const handelBackspace = ()=>{
     setvalues(value.slice(0,-1));
   };
+  const handleCalculate = () => {
+    try {
+      if (value.trim() === "") return;
+      const result = new Function(`return ${value}`)();
+      setvalues(String(result));
+    } catch (error) {
+      setvalues("Error");
+    }
+  };
 
   return (
    <div className="w-full min-h-screen flex flex-col items-center justify-center p-5">
