@@ -6,7 +6,7 @@ const todorouter = express.Router();
 todorouter.get("/getall",async(req,res)=>{
 try{
 const todos = await todo.find();
-res.send
+res.send(200).json(todos);
 
 }
 catch{
