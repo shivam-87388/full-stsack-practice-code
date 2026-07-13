@@ -51,7 +51,7 @@ const page = () => {
       <button value="1" onClick={handleClick} className="flex-1  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">1</button>
       <button value="2" onClick={handleClick} className=" flex-1  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">2</button>
       <button value="3" onClick={handleClick} className="flex-1 flex items-center justify-center  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">3</button>
-      <button value="+" onClick={handleClick} className="flex-1  flex items-center justify-center  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]"><IconPlus/></button>
+      <button value="+" onClick={handleClick} className="flex-1  flex items-center justify-center  bg-[#DFDFDF] px-4 py-2.5 rounded-lg text-xl font-bold shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)]">+</button>
     </div>
       {/* row-5 */}
     <div className="flex flex-row gap-3.5  p-2 ">
