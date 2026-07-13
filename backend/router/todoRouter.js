@@ -1,19 +1,16 @@
 import express, { json } from "express";
 import todo from "../models/todo.js"
+import e from "express";
 
 const todorouter = express.Router();
  //get method
 todorouter.get("/getall",async(req,res)=>{
 try{
 const todos = await todo.find();
-res.send(200).json(todos);
+res.status(200).json(todos);
 
 }
-catch{
-
-}
-    
-   
+catch (error) {res.send(500).json(error)}
 });
 
 //post method
