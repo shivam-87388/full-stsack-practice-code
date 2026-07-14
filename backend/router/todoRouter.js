@@ -1,2 +1,12 @@
 const express = require('express');
-const todo =  express.router();
+const router =  express.Router();
+
+//get method
+router.get('/', (req, res) => {
+  res.status({
+    status: 200,
+    msg: sucessfull
+  });
+});
+
+module.exports = router;
