@@ -3,10 +3,9 @@ const router =  express.Router();
 
 //get method
 router.get('/', (req, res) => {
-  res.status({
-    status: 200,
-    msg: sucessfull
-  });
+  res.status(200).json({
+    msg: "sucessfull",
+  })
 });
 
 module.exports = router;
