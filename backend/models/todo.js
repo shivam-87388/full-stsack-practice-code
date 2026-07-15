@@ -1,3 +1,9 @@
-import mongoose from 'mongoose';
-const  todo = new mongoose.Schema({ type: String, required:true });
-module.exports =  todo;
+const mongoose = require("mongoose");
+const todo = new mongoose.Schema({
+  addtodo: {
+    type: String,
+    required: true,
+  },
+});
+
+module.exports = todo;
