@@ -8,17 +8,31 @@ router.get('/', (req, res) => {
   })
 });
 //post method
-router.post('/add', (req, res) => {
+router.post("/add", (req, res) => {
+  try {
+    res.status(200).json({ message: "sucessfull post api", 
+    data: req.body });
+
+    console.log(res.body);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+//delete method
+router.delete("/delete",(req,res)=>{
   try{
-res.status(200).json({message:"sucessfull post api", data: req.body});
+res.status(200).json({
+  message:"sucessful todo is delete",
+  data: res.body
+})
 console.log(res.body);
 
-
-  }catch(error){
-    res.status(500).json({message: error.message});
+  } catch(error){
+    res.status(500).json({
+      message: error.message
+    })
 
   }
-
-  
-});
+})
 module.exports = router;
