@@ -12,7 +12,7 @@ connection_db();
 app.use(cors())
 app.use(express.json());
 
-app.use("/fake",require("./router/todoRouter"));
+app.use("/todo",require("./router/todoRouter"));
 
 
 
