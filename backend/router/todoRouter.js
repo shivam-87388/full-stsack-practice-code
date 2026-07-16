@@ -13,7 +13,7 @@ router.post("/add", (req, res) => {
     res.status(200).json({ message: "sucessfull post api", 
     data: req.body });
 
-    console.log(res.body);
+    console.log(req.body);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -24,7 +24,7 @@ router.delete("/delete",(req,res)=>{
   try{
 res.status(200).json({
   message:"sucessful todo is delete",
-  data: res.body
+  data: req.body
 })
 console.log(res.body);
 
