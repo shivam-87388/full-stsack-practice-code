@@ -1,5 +1,5 @@
 const express = require('express');
-const model =("./models/todo.js")
+
 const router =  express.Router();
 
 //get method
@@ -21,7 +21,7 @@ router.post("/add", (req, res) => {
 });
 
 //delete method
-router.delete("/delete",(req,res)=>{
+router.delete("/delete/:id",(req,res)=>{
   try{
 res.status(200).json({
   message:"sucessful todo is delete",
