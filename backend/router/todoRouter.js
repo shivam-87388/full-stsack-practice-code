@@ -21,11 +21,12 @@ router.post("/add", (req, res) => {
 });
 
 //delete method
-router.delete("/delete/:id",(req,res)=>{
+router.delete("/delete/:id",async(req,res)=>{
   try{
+    const currentid = await req.params.id
 res.status(200).json({
   message:"sucessful todo is delete",
-  data: req.body
+  data: currentid
 })
 console.log(req.body);
 
