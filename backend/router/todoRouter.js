@@ -1,4 +1,5 @@
 const express = require('express');
+const model =("./models/todo.js")
 const router =  express.Router();
 
 //get method
