@@ -28,7 +28,7 @@ res.status(200).json({
   message:"sucessful todo is delete",
   data: currentid
 })
-console.log(req.body);
+console.log(currentid);
 
   } catch(error){
     res.status(500).json({
