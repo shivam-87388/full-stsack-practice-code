@@ -34,14 +34,17 @@ router.delete("/delete/:id",async(req,res)=>{
   try{
     const currentid = req.params.id;
     const deletetodo = await todo.findByIdAndDelete(currentid);
-    
-res.status(200).json({
-  message:"sucessful todo is delete",
-  data: deletetodo,
-});
-console.log(currentid);
 
-  } catch(error){
+    if (deletetodo == null) {
+      return res.status(400).json({data: "item not found"})
+      
+    } else {
+       return res.status(200).json({
+  message:"sucessful todo is delete",
+  data: deletetodo,});
+    };
+  }
+ catch(error){
     res.status(500).json({
       message: error.message
     });
