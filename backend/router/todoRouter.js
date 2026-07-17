@@ -21,7 +21,7 @@ router.post("/add", (req, res) => {
 });
 
 //delete method
-router.delete("/delete/:id",async(req,res)=>{
+router.delete("/delete/:id",(req,res)=>{
   try{
     const currentid = req.params.id
 res.status(200).json({
