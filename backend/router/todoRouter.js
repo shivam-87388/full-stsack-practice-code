@@ -4,17 +4,17 @@ const todo = require("../models/todo.js")
 const router =  express.Router();
 
 //get method
-router.get('/', async(req, res) => {
+router.get('/', async(req, res) => { 
   try {
-    const todo = 
-    
+    const todos =  await todo.find()
     res.status(200).json({
-      msg: "successful",
+      "message": "succesfull"
+    })
   } catch (error) {
-    
+    res.status(500)
   }
-})
 });
+  
 //post method
 router.post("/add", (req, res) => {
   try {
