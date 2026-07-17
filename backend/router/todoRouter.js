@@ -8,8 +8,8 @@ router.get('/', async(req, res) => {
   try {
     const todos =  await todo.find()
     res.status(200).json({
-      "message": "succesfull",
-      "data": todos
+      message: "succesfull",
+      data: todos,
     });
   } catch (error) {
     res.status(500).json({
@@ -19,13 +19,13 @@ router.get('/', async(req, res) => {
 });
   
 //post method
-router.post("/add", (req, res) => {
+router.post("/add", async(req, res) => {
   try {
+const addtodo = await todo.updateOne(req.body)
 
     res.status(200).json({ message: "sucessfull post api", 
-    data: req.body });
-
-    console.log(req.body);
+    addtodo});
+    
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
