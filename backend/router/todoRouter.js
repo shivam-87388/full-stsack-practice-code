@@ -1,4 +1,5 @@
 const express = require('express');
+const todo = require("../models/todo.js")
 
 const router =  express.Router();
 
@@ -11,6 +12,7 @@ router.get('/', (req, res) => {
 //post method
 router.post("/add", (req, res) => {
   try {
+
     res.status(200).json({ message: "sucessfull post api", 
     data: req.body });
 
@@ -21,12 +23,14 @@ router.post("/add", (req, res) => {
 });
 
 //delete method
-router.delete("/delete/:id",(req,res)=>{
+router.delete("/delete/:id",async(req,res)=>{
   try{
-    const currentid = req.params.id
+    const currentid = req.params.id;
+    const deletetodo = await todo.findByIdAndDelete(currentid);
+    
 res.status(200).json({
   message:"sucessful todo is delete",
-  data: currentid
+  data: deletetodo
 })
 console.log(currentid);
 
