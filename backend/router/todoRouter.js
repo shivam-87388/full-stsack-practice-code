@@ -4,10 +4,16 @@ const todo = require("../models/todo.js")
 const router =  express.Router();
 
 //get method
-router.get('/', (req, res) => {
-  res.status(200).json({
-    msg: "successful",
-  })
+router.get('/', async(req, res) => {
+  try {
+    const todo = 
+    
+    res.status(200).json({
+      msg: "successful",
+  } catch (error) {
+    
+  }
+})
 });
 //post method
 router.post("/add", (req, res) => {
@@ -30,14 +36,14 @@ router.delete("/delete/:id",async(req,res)=>{
     
 res.status(200).json({
   message:"sucessful todo is delete",
-  data: deletetodo
-})
+  data: deletetodo,
+});
 console.log(currentid);
 
   } catch(error){
     res.status(500).json({
       message: error.message
-    })
+    });
 
   }
 })
