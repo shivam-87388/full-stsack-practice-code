@@ -8,10 +8,13 @@ router.get('/', async(req, res) => {
   try {
     const todos =  await todo.find()
     res.status(200).json({
-      "message": "succesfull"
-    })
+      "message": "succesfull",
+      "data": todos
+    });
   } catch (error) {
-    res.status(500)
+    res.status(500).json({
+      message:error.message
+    });
   }
 });
   
