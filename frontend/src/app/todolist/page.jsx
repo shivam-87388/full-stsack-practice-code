@@ -5,17 +5,18 @@ import { IconTrash } from "@tabler/icons-react";
 import axios from 'axios';
 
 
-const response = await axios.get(
-  "http://localhost:5000/todo/"
-);
-console.log(response);
 
-const responseadd = await axios.post("http://localhost:5000/todo/add",{"addtodo": "task"});
-console.log(responseadd);
 
-const responsedelete = await axios.delete("http://localhost:5000/todo/delete/:id")
+
+
+
 
 const todolist = () => {
+//   const response = await axios.get(
+//   "http://localhost:5000/todo/"
+// );
+// console.log(response);
+
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
 
@@ -24,14 +25,19 @@ const todolist = () => {
     console.log(e.target.value);
   };
 
-  const handelAdd = () => {
+  const handelAdd = async() => {
+    const response = await axios.post("http://localhost:5000/todo/add",{addtodo:task});
+    console.log(response.data.data);
+console.log(response);
     if (task.trim() === "") return;
     setTasks([...tasks, task]);
     setTask("");
 
     console.log([...tasks, task]);
   };
-  const handelDelete = (index) => {
+  const handelDelete = async(id) => {
+    const response = await axios.delete(`http://localhost:5000/todo/delete/${id}`);
+console.log(response);
     const tasklist = [...tasks];
     tasklist.splice(index, 1);
     setTasks(tasklist);
