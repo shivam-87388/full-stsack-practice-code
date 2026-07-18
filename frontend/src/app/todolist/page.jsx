@@ -10,7 +10,10 @@ const response = await axios.get(
 );
 console.log(response);
 
-const responseadd = await axios.post("http://localhost:5000/todo/add",{"addtodo": "task"})
+const responseadd = await axios.post("http://localhost:5000/todo/add",{"addtodo": "task"});
+console.log(responseadd);
+
+const responsedelete = await axios.delete("http://localhost:5000/todo/delete/:id")
 
 const todolist = () => {
   const [task, setTask] = useState("");
