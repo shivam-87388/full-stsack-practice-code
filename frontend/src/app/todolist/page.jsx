@@ -9,7 +9,7 @@ const response = await axios.get(
   "http://localhost:5000/todo/"
 );
 
-const 
+const responseadd = await axios.post("http://localhost:5000/todo/add",{"addtodo": task})
 
 const todolist = () => {
   const [task, setTask] = useState("");
