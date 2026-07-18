@@ -8,6 +8,7 @@ import axios from 'axios';
 const response = await axios.get(
   "http://localhost:5000/todo/"
 );
+console.log(response);
 
 const responseadd = await axios.post("http://localhost:5000/todo/add",{"addtodo": task})
 
