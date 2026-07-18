@@ -2,6 +2,12 @@
 import React from "react";
 import { useState } from "react";
 import { IconTrash } from "@tabler/icons-react";
+import axios from 'axios';
+
+
+const response = await axios.get(
+  ""
+);
 
 const todolist = () => {
   const [task, setTask] = useState("");
@@ -24,6 +30,7 @@ const todolist = () => {
     tasklist.splice(index, 1);
     setTasks(tasklist);
   };
+  
 
   return (
     <div>
