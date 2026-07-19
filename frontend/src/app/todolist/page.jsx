@@ -26,23 +26,27 @@ const todolist = () => {
   };
 
   const handelAdd = async() => {
-    if (task.trim() === "") 
+    if (task.trim() === "")
       return;
     const response = await axios.post("http://localhost:5000/todo/add",{addtodo:task});
-console.log(response);
-
-    setTasks([...tasks, task]);
-
+    setTasks([...tasks, response.data.data]);
     setTask("");
-
-    console.log([...tasks, task]);
+    
   };
-  const handelDelete = async(id) => {
-    const response = await axios.delete(`http://localhost:5000/todo/delete/${id}`);
-console.log(response);
-    const tasklist = [...tasks];
-    tasklist.splice(id, 1);
+  const handelDelete = async(id,index) => {
+    try{
+      const response = await axios.delete(`http://localhost:5000/todo/delete/${id}`);
+      console.log(response.data.message);
+       const tasklist = [...tasks];
+    tasklist.splice(index, 1);
     setTasks(tasklist);
+    }
+catch (error){
+  console.log(error.message);
+
+}
+
+   
   };
   
 
