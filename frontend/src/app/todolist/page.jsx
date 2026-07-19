@@ -26,11 +26,12 @@ const todolist = () => {
   };
 
   const handelAdd = async() => {
-    const response = await axios.post("http://localhost:5000/todo/add",{addtodo:task});
-    console.log(response.data.data);
-console.log(response);
-    if (task.trim() === "") return;
+    if (task.trim() === "") 
+      return;
     setTasks([...tasks, task]);
+
+    const response = await axios.post("http://localhost:5000/todo/add",{addtodo:task});
+console.log(response);
     setTask("");
 
     console.log([...tasks, task]);
@@ -39,7 +40,7 @@ console.log(response);
     const response = await axios.delete(`http://localhost:5000/todo/delete/${id}`);
 console.log(response);
     const tasklist = [...tasks];
-    tasklist.splice(index, 1);
+    tasklist.splice(id, 1);
     setTasks(tasklist);
   };
   
