@@ -28,10 +28,11 @@ const todolist = () => {
   const handelAdd = async() => {
     if (task.trim() === "") 
       return;
-    setTasks([...tasks, task]);
-
     const response = await axios.post("http://localhost:5000/todo/add",{addtodo:task});
 console.log(response);
+
+    setTasks([...tasks, task]);
+
     setTask("");
 
     console.log([...tasks, task]);
