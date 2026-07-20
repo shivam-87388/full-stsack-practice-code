@@ -4,13 +4,6 @@ import { useState } from "react";
 import { IconTrash } from "@tabler/icons-react";
 import axios from 'axios';
 
-
-
-
-
-
-
-
 const todolist = () => {
 //   const response = await axios.get(
 //   "http://localhost:5000/todo/"
