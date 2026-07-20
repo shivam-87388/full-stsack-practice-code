@@ -10,17 +10,20 @@ const todolist = () => {
 useEffect(() => {
   const gettodo = async()=>{
 try {
-  const todofetch =
+  const response = await axios.get("http://localhost:5000/todo");
+setTasks(response.data.data);
   
 } catch (error) {
+  console.log(error.message);
   
 }
   }
 
   return () => {
-    // 2. Cleanup (Optional): Code to clean up the effect goes here
+   
   };
-}, [dependencies]);
+  gettodo();
+}, []);
 
 
   const [task, setTask] = useState("");
