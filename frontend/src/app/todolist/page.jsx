@@ -5,10 +5,23 @@ import { IconTrash } from "@tabler/icons-react";
 import axios from 'axios';
 
 const todolist = () => {
-//   const response = await axios.get(
-//   "http://localhost:5000/todo/"
-// );
-// console.log(response);
+
+
+useEffect(() => {
+  const gettodo = async()=>{
+try {
+  const todofetch =
+  
+} catch (error) {
+  
+}
+  }
+
+  return () => {
+    // 2. Cleanup (Optional): Code to clean up the effect goes here
+  };
+}, [dependencies]);
+
 
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
