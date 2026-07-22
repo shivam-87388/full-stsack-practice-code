@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IconTrash } from "@tabler/icons-react";
 import axios from 'axios';
 
