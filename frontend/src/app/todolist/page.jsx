@@ -10,8 +10,18 @@ const todolist = () => {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
 
-useEffect()
-
+useEffect(() => {
+  const getdata = async()=>{
+    try {
+      const fetchdata = await axios.get("http://localhost:5000/");
+      response.send(response.data.data);
+      
+    } catch (error) {
+      response.send(error.message);
+      
+    }
+  }
+}, []); 
 
 
   const handelChange = (e) => {
