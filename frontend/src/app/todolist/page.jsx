@@ -1,5 +1,5 @@
 'use client'
-import React from "react";
+import React, { useEffectEvent } from "react";
 import { useState, useEffect } from "react";
 import { IconTrash } from "@tabler/icons-react";
 import axios from 'axios';
@@ -7,28 +7,12 @@ import axios from 'axios';
 
 const todolist = () => {
 
-
-useEffect(() => {
-  const gettodo = async()=>{
-try {
-  const response = await axios.get("http://localhost:5000/todo");
-setTasks(response.data.data);
-  
-} catch (error) {
-  console.log(error.message);
-  
-}
-  }
-
-  return () => {
-   
-  };
-  gettodo();
-}, []);
-
-
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
+
+
+
+}
 
   const handelChange = (e) => {
     setTask(e.target.value);
