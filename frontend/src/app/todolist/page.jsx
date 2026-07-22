@@ -14,10 +14,10 @@ useEffect(() => {
   const getdata = async()=>{
     try {
       const fetchdata = await axios.get("http://localhost:5000/");
-      response.send(response.data.data);
+      setTasks(fetchdata.data.data);
       
     } catch (error) {
-      response.send(error.message);
+      console.log(error.message);
       
     }
   }
@@ -79,7 +79,7 @@ catch (error){
         </div>
         {tasks.length > 0 && (
           <div className="flex flex-col justify-center items-center gap-2 rounded-lg bg-green-900 w-3/5 p-2 mt-2">
-            {tasks.map((element, index) => {
+            {tasks.map((element.todolist, index) => {
               return (
                 <p
                   key={index}
