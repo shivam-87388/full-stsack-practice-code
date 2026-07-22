@@ -1,5 +1,4 @@
 'use client'
-import React, { useEffectEvent } from "react";
 import { useState, useEffect } from "react";
 import { IconTrash } from "@tabler/icons-react";
 import axios from 'axios';
@@ -13,7 +12,7 @@ const todolist = () => {
 useEffect(() => {
   const getdata = async()=>{
     try {
-      const fetchdata = await axios.get("http://localhost:5000/");
+      const fetchdata = await axios.get("http://localhost:5000/todo/");
       setTasks(fetchdata.data.data);
       
     } catch (error) {
@@ -38,11 +37,12 @@ useEffect(() => {
     setTask("");
     
   };
-  const handelDelete = async(id,index) => {
+  const handelDelete = async(index) => {
+    const  id = tasks[index]._id;
     try{
       const response = await axios.delete(`http://localhost:5000/todo/delete/${id}`);
       console.log(response.data.message);
-       const tasklist = [...tasks];
+      const tasklist = [...tasks];
     tasklist.splice(index, 1);
     setTasks(tasklist);
     }
@@ -80,7 +80,7 @@ catch (error){
         </div>
         {tasks.length > 0 && (
           <div className="flex flex-col justify-center items-center gap-2 rounded-lg bg-green-900 w-3/5 p-2 mt-2">
-            {tasks.map((element.addtodo, index) => {
+            {tasks.map((element, index) => {
               return (
                 <p
                   key={index}
