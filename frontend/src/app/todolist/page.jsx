@@ -21,6 +21,7 @@ useEffect(() => {
       
     }
   }
+  getdata();
 }, []); 
 
 
@@ -85,7 +86,7 @@ catch (error){
                   key={index}
                   className="flex justify-between items-center w-full border-white border-2 text-white rounded-md px-2.5 py-2 text-2xl"
                 >
-                  {element}
+                  {element.addtodo}
                   <button
                     onClick={() => handelDelete(index)}
                     className="p-2 rounded-md bg-cyan-500 hover:bg-cyan-600 hover:cursor-pointer"
