@@ -10,9 +10,9 @@ const todolist = () => {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
 
+useEffect()
 
 
-}
 
   const handelChange = (e) => {
     setTask(e.target.value);
