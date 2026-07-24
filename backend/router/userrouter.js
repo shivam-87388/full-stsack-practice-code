@@ -12,9 +12,13 @@ router.get("/", async(req,res)=>{
     } catch (error) {
         res.send(500),json({
             mesage: error.message
-        })
-
-        
+        })   
     }
+
+});
+
+//post method
+router.post("/add",(req,res)=>{
+    
 
 })
