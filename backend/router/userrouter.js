@@ -3,7 +3,7 @@ const user = require("../models/user")
 const router = express.Router();
 
 //get method
-router.get("/", async(req,res)=>{
+router.get("/login", async(req,res)=>{
     try {
         const users = user.find();
         res.send(200).json({
@@ -18,7 +18,7 @@ router.get("/", async(req,res)=>{
 });
 
 //post method
-router.post("/add",(req,res)=>{
-    
+router.post("/create-account",(req,res)=>{
+
 
 })
