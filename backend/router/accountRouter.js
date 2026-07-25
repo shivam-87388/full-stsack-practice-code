@@ -22,6 +22,7 @@ router.post("/create-account", async(req,res)=>{
     try {
         const createaccount = await user.create(req.body);
         res.send(200).json({
+            message: "account successfully created",
             data: createaccount
         });
         
