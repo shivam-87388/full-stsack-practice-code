@@ -20,7 +20,7 @@ const createaccount = useFormik({
   },
 });
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex items-center justify-center min-h-screen bg-[#F0F4F9]">
       <Toaster position="top-center"/>
       <form  onSubmit={createaccount.handleSubmit} className="flex flex-col items-center justify-center p-4 bg-white shadow-2xl rounded-2xl border-black border-2">
       <h1 className="text-black text-2xl font-bold mb-2.5"> Create Account</h1>
