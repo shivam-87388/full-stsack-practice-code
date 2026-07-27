@@ -12,14 +12,11 @@ const createaccount = useFormik({
     password:"",
     confirmpassword:"",
   },
-  onSubmit:(value)=>{
-    console.log(value);
-    if (value.password !== value.confirmpassword) {
+  onSubmit:(values)=>{
+    console.log(values);
+    if (values.password !== values.confirmpassword) {
       toast.error("password is not same");
     }
-    else if (value.password === value.confirmpassword){
-      toast.success('Successfully account created');
-    };
   },
 });
   return (
@@ -50,7 +47,7 @@ const createaccount = useFormik({
         <label htmlFor="confirmpassword"  className="text-xl text-black">Confirm Password</label>
         <input onChange={createaccount.handleChange} name="confirmpassword" value={createaccount.values.confirmpassword} id="confirmpassword" placeholder="enter confirm password" required className="border-2 text-xl text-black border-white rounded-md px-2.5 py-1"/>
         </div>
-        <button type="submit" className="bg-yellow-300 px-2.5 py-2 rounded-md font-bold text-black text-xl border transition delay-150 duration-300 hover:scale-95 hover:cursor-pointer hover:ring ring-black " >submit</button>
+        <button type="submit" className="bg-blue-800 w-full px-2.5 py-2 rounded-md font-bold text-white text-xl border transition delay-150 duration-300 hover:scale-95 hover:cursor-pointer hover:ring ring-black " >submit</button>
        </form>
     </div>
   )
