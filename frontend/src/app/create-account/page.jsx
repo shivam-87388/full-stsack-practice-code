@@ -22,32 +22,32 @@ const createaccount = useFormik({
   return (
     <div className="flex items-center justify-center min-h-screen">
       <Toaster position="top-center"/>
-      <form  onSubmit={createaccount.handleSubmit} className="flex flex-col items-center justify-center p-4 bg-white shadow-2xl rounded-2xl ">
+      <form  onSubmit={createaccount.handleSubmit} className="flex flex-col items-center justify-center p-4 bg-white shadow-2xl rounded-2xl border-black border-2">
       <h1 className="text-black text-2xl font-bold mb-2.5"> Create Account</h1>
         <div className="flex flex-row  gap-3 w-full ">
           <div className="flex flex-col"> 
-          <label htmlFor='firstname'className="text-black text-xl">First name</label>
-          <input onChange={createaccount.handleChange} value={createaccount.values.firstname} name="firstname" placeholder="jhon" id="firstname" type="text" required className="text-xl text-black rounded-md border-2 border-black px-2.5 py-1 w-44"/> 
+          <label htmlFor='firstname'className="text-black text-base">First name</label>
+          <input onChange={createaccount.handleChange} value={createaccount.values.firstname} name="firstname" placeholder="jhon" id="firstname" type="text" required className="text-base text-black rounded-md border-2 border-black px-2.5 py-1 w-44"/> 
           </div>
           <div className="flex flex-col "> 
-          <label htmlFor='lastname'className="text-black text-xl">Last name</label>
-          <input onChange={createaccount.handleChange} value={createaccount.values.lastname} name="lastname" placeholder="park" id="lastname" type="text" className="text-xl text-black rounded-md border-2 border-black px-2.5 py-1 w-44"/> 
+          <label htmlFor='lastname'className="text-black text-base">Last name</label>
+          <input onChange={createaccount.handleChange} value={createaccount.values.lastname} name="lastname" placeholder="park" id="lastname" type="text" className="text-base text-black rounded-md border-2 border-black px-2.5 py-1 w-44"/> 
           </div>
         
         </div>
         <div className="flex flex-col  justify-center w-full">
-        <label htmlFor='email' className="text-xl text-black">Email</label>
-        <input onChange={createaccount.handleChange} value={createaccount.values.email} name="email" placeholder="xyz@gmail.com" id="email" required className="border-2 text-black text-xl border-black rounded-md px-2.5 py-1"/>
+        <label htmlFor='email' className="text-base text-black">Email</label>
+        <input onChange={createaccount.handleChange} value={createaccount.values.email} name="email" placeholder="xyz@gmail.com" id="email" required className="border-2 text-black text-base border-black rounded-md px-2.5 py-1"/>
         </div>
         <div className="flex flex-col justify-center w-full mb-3">
-        <label htmlFor='password' className="text-xl text-black">Password</label>
-        <input onChange={createaccount.handleChange} value={createaccount.values.password} name="password" placeholder="enter password" id="password" required className="border-2 text-xl text-black border-black rounded-md px-2.5 py-1"/>
+        <label htmlFor='password' className="text-base text-black">Password</label>
+        <input onChange={createaccount.handleChange} value={createaccount.values.password} name="password" placeholder="enter password" id="password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1"/>
         </div>
         <div className="flex flex-col justify-center w-full mb-3">
-        <label htmlFor="confirmpassword"  className="text-xl text-black">Confirm Password</label>
-        <input onChange={createaccount.handleChange} name="confirmpassword" value={createaccount.values.confirmpassword} id="confirmpassword" placeholder="enter confirm password" required className="border-2 text-xl text-black border-black rounded-md px-2.5 py-1"/>
+        <label htmlFor="confirmpassword"  className="text-base text-black">Confirm Password</label>
+        <input onChange={createaccount.handleChange} name="confirmpassword" value={createaccount.values.confirmpassword} id="confirmpassword" placeholder="enter confirm password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1"/>
         </div>
-        <button type="submit" className="bg-blue-800 w-full px-2.5 py-2 rounded-md font-bold text-white text-xl border transition delay-150 duration-300 hover:scale-95 hover:cursor-pointer hover:ring ring-black " >submit</button>
+        <button type="submit" className="bg-blue-800 w-full px-2.5 py-2 rounded-md font-bold text-white text-base border transition delay-150 duration-300 hover:scale-95 hover:cursor-pointer hover:ring ring-black " >submit</button>
        </form>
     </div>
   )
