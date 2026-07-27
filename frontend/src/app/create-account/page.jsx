@@ -47,7 +47,7 @@ const createaccount = useFormik({
         <label htmlFor="confirmpassword"  className="text-base text-black">Confirm Password</label>
         <input onChange={createaccount.handleChange} name="confirmpassword" value={createaccount.values.confirmpassword} id="confirmpassword" placeholder="enter confirm password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1 focus:outline-1 focus:outline-black "/>
         </div>
-        <button type="submit" className="bg-blue-800 w-full px-2.5 py-2 rounded-md font-bold text-white text-lg border-2 transition delay-300 duration-300 hover:scale-97 hover:cursor-pointer hover:ring-2 ring-black " >submit</button>
+        <button type="submit" className="bg-blue-800 w-full px-2.5 py-2 rounded-md font-bold text-white text-lg border-2 transition delay-150 duration-350 hover:scale-97 hover:cursor-pointer hover:ring-2 ring-black " >submit</button>
        </form>
     </div>
   )
