@@ -2,7 +2,7 @@
 import React from 'react'
 import { useFormik } from 'formik'
 import toast, { Toaster } from 'react-hot-toast';
-
+import axios from 'axios';
 const page = () => {
 const createaccount = useFormik({
   initialValues:{
@@ -12,11 +12,20 @@ const createaccount = useFormik({
     password:"",
     confirmpassword:"",
   },
-  onSubmit:(values)=>{
+  onSubmit:async(values)=>{
     console.log(values);
     if (values.password !== values.confirmpassword) {
       toast.error("password is not same");
     }
+try{
+    const response = await axios.post("http://localhost:5000/account/create-account",{values});
+     console.log(response.data.message);
+}
+     catch (error){
+  console.log(error.message);
+
+}
+
   },
 });
   return (
