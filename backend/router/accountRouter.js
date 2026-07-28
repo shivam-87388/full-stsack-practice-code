@@ -33,7 +33,7 @@ router.post("/create-account", async(req,res)=>{
         
     } catch (error) {
         res.status(500).json({
-            message: error.mesage
+            message: error.message
         });
         
     }
