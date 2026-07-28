@@ -34,7 +34,7 @@ const blog = () => {
    <section className="text-gray-600 body-font bg-green-500">
     <h1 className=" flex justify-center items-center text-white mt-4 p-2.5 text-3xl font-bold ">Blogs</h1>
   <div className="container px-5 py-24 mx-auto">
-    <div className="flex flex-wrap -m-4 justify-evenly">
+    <div className="flex flex-wrap m-4 justify-evenly">
         {Blogs.map((element)=>
         { 
             return(
