@@ -16,13 +16,16 @@ const createaccount = useFormik({
     console.log(values);
     if (values.password !== values.confirmpassword) {
       toast.error("password is not same");
+      return 
     }
 try{
-    const response = await axios.post("http://localhost:5000/account/create-account",{values});
+    const response = await axios.post("http://localhost:5000/account/create-account",values);
      console.log(response.data.message);
+     toast.success("account created sucessfully")
 }
      catch (error){
   console.log(error.message);
+  toast.error("something wrong");
 
 }
 
@@ -50,11 +53,11 @@ try{
         </div>
         <div className="flex flex-col justify-center w-full mb-1">
         <label htmlFor='password' className="text-base text-black">Password</label>
-        <input onChange={createaccount.handleChange} value={createaccount.values.password} name="password" placeholder="enter password" id="password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1 focus:outline-1 focus:outline-black "/>
+        <input onChange={createaccount.handleChange} value={createaccount.values.password} name="password" placeholder="enter password" id="password" type="password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1 focus:outline-1 focus:outline-black "/>
         </div>
         <div className="flex flex-col justify-center w-full mb-3.5">
         <label htmlFor="confirmpassword"  className="text-base text-black">Confirm Password</label>
-        <input onChange={createaccount.handleChange} name="confirmpassword" value={createaccount.values.confirmpassword} id="confirmpassword" placeholder="enter confirm password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1 focus:outline-1 focus:outline-black "/>
+        <input onChange={createaccount.handleChange} name="confirmpassword" value={createaccount.values.confirmpassword} id="confirmpassword" placeholder="enter confirm password" type="password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1 focus:outline-1 focus:outline-black "/>
         </div>
         <button type="submit" className="bg-blue-800 w-full px-2.5 py-2 rounded-md font-bold text-white text-lg border-2 transition delay-150 duration-350 hover:scale-97 hover:cursor-pointer hover:ring-2 ring-black " >submit</button>
        </form>

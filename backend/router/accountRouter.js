@@ -20,7 +20,7 @@ router.get("/login", async(req,res)=>{
 //post method
 router.post("/create-account", async(req,res)=>{
     try {
-        const existuser = await user.findOne({email: req.body.email})
+        const existingUser = await user.findOne({email: req.body.email})
         if (existingUser) 
         {
         return res.status(400).json({ message: "Email already registered" });
