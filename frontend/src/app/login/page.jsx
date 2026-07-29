@@ -29,8 +29,8 @@ const loginform = useFormik({
       </div>
       <div className="flex flex-col  justify-center mb-3">
       <label htmlFor="email">password</label>
-      <input type="password" id="password" placeholder="password" className="border-2 borde-black rounded-md px-1.5 py-1  focus:outline-1 focus:outline-black"> <span className="text-sm font-black p-1.5">show password</span></input>
-      
+      <input type="password" id="password" placeholder="password" className="border-2 borde-black rounded-md px-1.5 py-1  focus:outline-1 focus:outline-black"/> 
+      <span className="text-sm text-black px-1.5 py-0.5 w-fit bg-gray-400 rounded-sm">show</span>
       <a href='#' className='text-blue-600 text-sm text-right self-end mt-0.5'> forget password ?</a>
       </div>
       <button type="submit" className="w-full py-2 bg-blue-700 text-white rounded-md
