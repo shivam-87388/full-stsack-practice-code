@@ -1,28 +1,24 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 
 
 const page = () => {
-    const [hide,setHide] = useState(false);
-    const 
-    const handelClick = ()=>{
-        setHide(!hide);
-    }
+   
     
 
   return (
-    <div>
-        <button type="button" onClick={handelClick}>show</button>
-        {
-           (hide) ?
-           <p className="flex justify-center bg-amber-200">welcome to singh tect</p>
-           
-           
-           : 
-           ""
+    <div className='flex items-center justify-center '>
+      <div className="flex flex-col">
+     <label htmlFor="user-password">Password</label>
+     <div className=" grid grid-cols-2 gap-0.5">
+<input type="password" id="user-password" name="password" required className='border-2 border-black rounded-md px-2 focus:outline-0 py-0.5'></input>
+<button className='bg-gray-200 px-1.5 py-0.5 rounded-md w-fit hover:cursor-pointer'>show</button>
 
 
-        }
+     </div>
+
+
+      </div>
     </div>
   )
 }
