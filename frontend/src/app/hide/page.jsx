@@ -3,7 +3,10 @@ import React, { useState } from 'react'
 
 
 const page = () => {
-  const [showPassoword, setShowPassword] = useState();
+  const [showPassoword, setShowPassword] = useState(false);
+  const handleClick = ()=>{
+setShowPassword(!showPassoword)
+  }
    
     
 
@@ -13,10 +16,12 @@ const page = () => {
      <label htmlFor="user-password">Password</label>
      <div className=" flex flex-row  gap-1.5">
       {
-
+showPassoword ? 
+type="password":
+type="text"
       }
-<input type="password" id="user-password" name="password" required className='border-2 border-black rounded-md px-2 focus:outline-0 py-0.5'></input>
-<button className='bg-gray-100 px-1.5 py-0.5 rounded-md w-fit hover:cursor-pointer'>show</button>
+<input  id="user-password" name="password" required className='border-2 border-black rounded-md px-2 focus:outline-0 py-0.5'></input>
+<button type="button" onClick={handleClick} className='bg-gray-100 px-1.5 py-0.5 rounded-md w-fit hover:cursor-pointer'>show</button>
 
 
      </div>
