@@ -54,6 +54,7 @@ try{
         <div className="flex flex-col justify-center w-full mb-1">
         <label htmlFor='password' className="text-base text-black">Password</label>
         <input onChange={createaccount.handleChange} value={createaccount.values.password} name="password" placeholder="enter password" id="password" type="password" required className="border-2 text-base text-black border-black rounded-md px-2.5 py-1 focus:outline-1 focus:outline-black "/>
+        <button className="">show</button>
         </div>
         <div className="flex flex-col justify-center w-full mb-3.5">
         <label htmlFor="confirmpassword"  className="text-base text-black">Confirm Password</label>

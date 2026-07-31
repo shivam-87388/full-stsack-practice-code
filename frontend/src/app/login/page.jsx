@@ -39,7 +39,6 @@ const loginform = useFormik({
              transition-transform duration-300 ease-in-out
              hover:scale-95 hover:cursor-pointer">login</button>
     </form>
-
    </div>
   )
 }
