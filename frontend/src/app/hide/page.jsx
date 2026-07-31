@@ -17,10 +17,11 @@ setShowPassword(!showPassoword)
      <div className=" flex flex-row  gap-1.5">
       {
 showPassoword ? 
-type="password":
-type="text"
+<input type="passwrod"  id="user-password" name="password" required className='border-2 border-black rounded-md px-2 focus:outline-0 py-0.5'></input>:
+<input type="text"  id="user-password" name="password" required className='border-2 border-black rounded-md px-2 focus:outline-0 py-0.5'></input>
+
+
       }
-<input  id="user-password" name="password" required className='border-2 border-black rounded-md px-2 focus:outline-0 py-0.5'></input>
 <button type="button" onClick={handleClick} className='bg-gray-100 px-1.5 py-0.5 rounded-md w-fit hover:cursor-pointer'>show</button>
 
 
