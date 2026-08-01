@@ -11,10 +11,12 @@ const Togglelight = () => {
 
 
   return (
-    <div className="flex items-center justify-center  w-full h-screen bg-{light ? white : black}">
+    <div className={`flex items-center justify-center  w-full h-screen ${(light)? "bg-white":"bg-black"}`}>
+
+    
   
         <div className="flex items-center justify-center bg-amber-100 rounded-full border-2 border-black gap-2 px-3 py-2.5">
-        <button type="button" onClick={handleClick} className="hover:cursor-pointer"><IconSun stroke={2} size={25} /></button>
+        <button type="button" onClick={handleClick}  className="hover:cursor-pointer"><IconSun stroke={2} size={25} /></button>
         <button type="button" onClick={handleClick} className="hover:cursor-pointer hover:fill-black"><IconMoon stroke={2} size={25}/></button>
         </div>
     </div>
