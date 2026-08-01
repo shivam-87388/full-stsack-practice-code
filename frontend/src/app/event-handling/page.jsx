@@ -45,4 +45,3 @@ const handleChange = (e)=>{
 }
 
 export default page;
-
