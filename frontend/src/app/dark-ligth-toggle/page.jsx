@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+'use client'
+import React , {useState } from 'react'
 import { IconSun, IconMoon } from '@tabler/icons-react';
 
 const Togglelight = () => {
@@ -10,7 +11,7 @@ const Togglelight = () => {
 
 
   return (
-    <div className="flex items-center justify-center  w-full h-screen bg-{light ? white: black}">
+    <div className="flex items-center justify-center  w-full h-screen bg={light ? white: black}">
   
         <div className="flex items-center justify-center bg-amber-100 rounded-full border-2 border-black gap-2 px-3 py-2.5">
         <button type="button" onClick={handleClick} className="hover:cursor-pointer"><IconSun stroke={2} size={25} /></button>
