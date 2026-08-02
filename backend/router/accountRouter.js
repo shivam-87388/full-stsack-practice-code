@@ -8,6 +8,12 @@ router.post('/login', async(req, res) => {
     const loginuser = await user.findOne({
         email: req.body.email,
     })
+    if (loginuser !== user.email) {
+        return res.status(400).json({
+            message: "email does not exist"
+        });
+        
+    }
     
   } catch (error) {
     
