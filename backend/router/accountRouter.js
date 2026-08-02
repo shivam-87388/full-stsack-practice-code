@@ -5,7 +5,7 @@ const router = express.Router();
 //get method
 router.get("/login", async(req,res)=>{
     try {
-        const users = user.find();
+        const users = await user.find();
         res.status(200).json({
             data: users,
         })
