@@ -3,19 +3,16 @@ const user = require("../models/account")
 const router = express.Router();
 
 //get method
-router.get("/login", async(req,res)=>{
-    try {
-        const users = await user.find();
-        res.status(200).json({
-            data: users,
-        })
-    } catch (error) {
-        res.status(500),json({
-            mesage: error.message
-        })   
-    }
-
-});
+router.post('/login', async(req, res) => {
+  try {
+    const loginuser = await user.findOne({
+        email: req.body.email,
+    })
+    
+  } catch (error) {
+    
+  }
+})
 
 //post method
 router.post("/create-account", async(req,res)=>{
