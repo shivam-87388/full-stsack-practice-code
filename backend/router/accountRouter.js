@@ -10,7 +10,7 @@ router.post('/login', async(req, res) => {
     try {
         const user = req.body.email;
         if (!user) {
-            return res.status(400).json({})
+            return res.status(400).json({message: "user does not exist"})
             
         }
         
