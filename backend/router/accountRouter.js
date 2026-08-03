@@ -5,15 +5,20 @@ const router = express.Router();
 //get method
 router.post('/login', async(req, res) => {
   try {
-    const loginuser = await user.findOne({
-        email: req.body.email,
+    const loginuser = await user.findOne({data: req.body
     })
-    if (loginuser !== user.email) {
-        return res.status(400).json({
-            message: "email does not exist"
-        });
+    try {
+        const user = req.body.email;
+        if (!user) {
+            return res.status(400).json({})
+            
+        }
+        
+    } catch (error) {
         
     }
+    
+   
     
   } catch (error) {
     
