@@ -4,29 +4,17 @@ const router = express.Router();
 
 //get method
 router.post('/login', async(req, res) => {
-  try {
-    const loginuser = await user.findOne({data: req.body
-    })
-    try {
-        const user = req.body.email;
-        if (!user) {
-            return res.status(400).json({message: "user does not exist"});
-            
-        }
-        if (req.password === ) {
-            
-        }
-
-        
-    } catch (error) {
+ try {
+    const loginuser = await user.findOne({email: req.body.email})
+    if (!loginuser=== null) {
+        return res.status(400).json({
+            message: "user does not exist"
+        })
         
     }
+ } catch (error) {
     
-   
-    
-  } catch (error) {
-    
-  }
+ }
 })
 
 //post method
