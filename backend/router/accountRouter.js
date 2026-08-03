@@ -10,7 +10,11 @@ router.post('/login', async(req, res) => {
         return res.status(400).json({
             message: "user does not exist"
         })
-        
+        if (req.body.password === login.password) {
+           return res.status(400).json({
+            message: "password is wrong"
+        }) 
+        }
     }
  } catch (error) {
     
