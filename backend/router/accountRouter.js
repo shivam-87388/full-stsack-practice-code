@@ -36,17 +36,16 @@ router.post("/create-account", async(req,res)=>{
         {
         return res.status(400).json({ message: "Email already registered" });
         }
-        const hassedpasswrod =  await bcrypt.hash(req.body.password, 10);
-        const createaccount = await user.create({
-            
-            fristname: req.body.fristname,
+        const hassedPasswrod =  await bcrypt.hash(req.body.password, 10);
+        const createAccount = await user.create({
+            firstname: req.body.firstname,
+            lastname: req.body.lastname,
             email: req.body.email,
-            password: hassedpasswrod,
-
-        });
+            password: hassedPasswrod
+    });
         res.status(200).json({
             message: "account successfully created",
-            data: createaccount
+            data: createAccount,
         });
         
     } catch (error) {
