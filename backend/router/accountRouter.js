@@ -6,6 +6,7 @@ const bcrypt = require('bcrypt');
 // login account
 router.post('/login', async(req, res) => {
  try {
+    const hassedPasswrod = await bcrypt.compareSync(req.body.password,10);
     const loginuser = await user.findOne({email: req.body.email})
     if (!loginuser=== null) {
         return res.status(400).json({
