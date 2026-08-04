@@ -1,8 +1,9 @@
 const express = require('express');
 const user = require("../models/account")
 const router = express.Router();
+const bcrypt = require('bcrypt');
 
-//get method
+// login account
 router.post('/login', async(req, res) => {
  try {
     const loginuser = await user.findOne({email: req.body.email})
@@ -25,14 +26,17 @@ router.post('/login', async(req, res) => {
  }
 })
 
-//post method
+//create account
 router.post("/create-account", async(req,res)=>{
+    
     try {
+        
         const existingUser = await user.findOne({email: req.body.email})
         if (existingUser) 
         {
         return res.status(400).json({ message: "Email already registered" });
         }
+        const hassedpasswrod =  await bcrypt.hash(req.body.password, 10);
         const createaccount = await user.create(req.body);
         res.status(200).json({
             message: "account successfully created",
