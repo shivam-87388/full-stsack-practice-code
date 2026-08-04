@@ -37,7 +37,11 @@ router.post("/create-account", async(req,res)=>{
         return res.status(400).json({ message: "Email already registered" });
         }
         const hassedpasswrod =  await bcrypt.hash(req.body.password, 10);
-        const createaccount = await user.create(req.body);
+        const createaccount = await user.create({
+            email: req.body.email,
+            password: hassedpasswrod,
+            
+        });
         res.status(200).json({
             message: "account successfully created",
             data: createaccount
