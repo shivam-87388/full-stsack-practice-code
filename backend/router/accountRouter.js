@@ -65,7 +65,7 @@ router.post('/login', async(req, res) => {
         const findUser = await user.findOne({email: req.body.email})
         if (findUser != null) {
             const hassedPassword = await bcrypt.compare(req.body.password,findUser.password)
-            if (hassedPassword== true) {
+            if (hassedPassword == true) {
                 
                 req.status(200).json({
                     message: "login sucessfull"
