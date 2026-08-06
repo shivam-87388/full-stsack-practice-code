@@ -64,17 +64,29 @@ router.post('/login', async(req, res) => {
     try {
         const findUser = await user.findOne({email: req.body.email})
         if (findUser != null) {
-            const hassedPassword = await bcrypt.compare(findUser.password,req.body.password)
+            const hassedPassword = await bcrypt.compare(req.body.password,findUser.password)
+            if (hassedPassword== true) {
+                
+                req.status(200).json({
+                    message: "login sucessfull"
+                })   
+                
+            } else {
+                req.status(404).json({
+                    message: "password wrong"
+                })   
+                
+            }
 
-            res.status(200).json({
-                    message: "login successfully"})
+           
 
         } else {
-                res.status(404).json({
-                    message: "password is wrong",
-                }) 
+            req.status(404).json({
+                message: "user does not exist"
+            })   
             
         } 
+       
     } catch (error) {
         res.status(500).json({
             message: error.message,
