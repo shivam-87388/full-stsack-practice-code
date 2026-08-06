@@ -4,29 +4,40 @@ const router = express.Router();
 const bcrypt = require('bcrypt');
 
 // login account
-// router.post('/login', async(req, res) => {
-//  try {
-    
-//     const loginuser = await user.findOne({email: req.body.email})
-//     if (!loginuser) {
-//         return res.status(400).json({
-//             message: "user does not exist"
-//         })
-//         const checkPasswrod = await bcrypt.compare(req.body.password,loginuser.password);
-//         if (!checkPasswrod) {
-//            return res.status(400).json({
-//             message: "password is wrong"
-//         }) 
-//         }
-//         res.status(200).json({message: "login successful"})
-//     }
-//  } catch (error) {
-//     res.status(500).json({
-//         message: "error.message"
-//     })
-    
-//  }
-// })
+router.post('/login', async(req, res) => {
+    try {
+        const findUser = await user.findOne({email: req.body.email})
+        if (findUser != null) {
+            const hassedPassword = await bcrypt.compare(req.body.password,findUser.password)
+            if (hassedPassword == true) {
+                res.status(200).json({
+                    message: "login sucessfull"
+                })   
+                
+            } else {
+                res.status(404).json({
+                    message: "password wrong"
+                })   
+                
+            }
+
+           
+
+        } else {
+            res.status(404).json({
+                message: "user does not exist"
+            })   
+            
+        } 
+       
+    } catch (error) {
+        res.status(500).json({
+            message: error.message,
+        })
+        
+    }
+  
+})
 
 //create account
 router.post("/create-account", async(req,res)=>{
@@ -66,13 +77,12 @@ router.post('/login', async(req, res) => {
         if (findUser != null) {
             const hassedPassword = await bcrypt.compare(req.body.password,findUser.password)
             if (hassedPassword == true) {
-                
-                req.status(200).json({
+                res.status(200).json({
                     message: "login sucessfull"
                 })   
                 
             } else {
-                req.status(404).json({
+                res.status(404).json({
                     message: "password wrong"
                 })   
                 
@@ -81,7 +91,7 @@ router.post('/login', async(req, res) => {
            
 
         } else {
-            req.status(404).json({
+            res.status(404).json({
                 message: "user does not exist"
             })   
             
