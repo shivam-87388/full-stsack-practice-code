@@ -62,24 +62,19 @@ router.post("/create-account", async(req,res)=>{
 
 router.post('/login', async(req, res) => {
     try {
-        const findUser = await user.findOne({email: req.body.email}),
+        const findUser = await user.findOne({email: req.body.email})
         if (findUser != null) {
             const hassedPassword = await bcrypt.compare(findUser.password,req.body.password)
-            if (hassedPassword !== true) {
-                res.status(400).json({
-                    message: "password is wrong",
-                })   
-                
-            }
+
             res.status(200).json({
                     message: "login successfully"})
 
+        } else {
+                res.status(404).json({
+                    message: "password is wrong",
+                }) 
             
-        }
-
-        
-     
-        
+        } 
     } catch (error) {
         res.status(500).json({
             message: error.message,
