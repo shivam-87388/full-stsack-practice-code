@@ -2,6 +2,8 @@ const express = require('express');
 const user = require("../models/account")
 const router = express.Router();
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
 
 // login account
 router.post('/login', async(req, res) => {
@@ -10,6 +12,14 @@ router.post('/login', async(req, res) => {
         if (findUser != null) {
             const hassedPassword = await bcrypt.compare(req.body.password,findUser.password)
             if (hassedPassword == true) {
+                const payload = {
+                    id: findUser._id
+                    email:
+
+
+                }
+ 
+                
                 res.status(200).json({
                     message: "login sucessfull"
                 })   
@@ -20,9 +30,6 @@ router.post('/login', async(req, res) => {
                 })   
                 
             }
-
-           
-
         } else {
             res.status(404).json({
                 message: "user does not exist"
