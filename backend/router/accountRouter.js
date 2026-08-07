@@ -16,12 +16,12 @@ router.post('/login', async(req, res) => {
                 const payload = {
                     id: findUser._id,
                     email: findUser.email
-                }
-                const token = jwt.sign(payload, )
- 
-                
+                };
+                const token = jwt.sign(payload,process.env.JWT_SECRET);
+        
                 res.status(200).json({
-                    message: "login sucessfull"
+                    message: "login sucessfull",
+                    token: token
                 })   
                 
             } else {
