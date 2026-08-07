@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 
+
 // login account
 router.post('/login', async(req, res) => {
     try {
@@ -13,11 +14,10 @@ router.post('/login', async(req, res) => {
             const hassedPassword = await bcrypt.compare(req.body.password,findUser.password)
             if (hassedPassword == true) {
                 const payload = {
-                    id: findUser._id
-                    email:
-
-
+                    id: findUser._id,
+                    email: findUser.email
                 }
+                const token = jwt.sign(payload, )
  
                 
                 res.status(200).json({
